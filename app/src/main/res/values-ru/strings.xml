@@ -1,0 +1,117 @@
+<resources>
+
+    <string name="version">"версия %1$s"</string>
+    <string name="app_name">"Патриоты Украины"</string>
+    <string name="empty_title">"Иллюстрация: patrioty.org.ua"</string>
+    <string name="progress_title_1">"Получение последних новостей"</string>
+    <string name="progress_title_2">"Загрузка данных"</string>
+    <string name="date_picker_title">"Выберите необходимую дату"</string>
+
+    <string name="menu_news">"Новости"</string>
+    <string name="menu_favorite">"Любимые"</string>
+    <string name="menu_settings">"Настройки"</string>
+    <string name="menu_about">"О программе"</string>
+    <string name="menu_exit">"Выход"</string>
+
+    <string name="rate_text_1">"Если вам понравилась программа"</string>
+    <string name="rate_text_2">"пожалуйста, найдите минутку чтобы оценить ее."</string>
+    <string name="rate_error">"Play Market не найдено"</string>
+    <string name="rate_later">"Позже"</string>
+    <string name="rate_yes">"Оценить"</string>
+    <string name="rate_no">"Никогда"</string>
+
+    <string name="site">"www.patrioty.org.ua"</string>
+    <string name="link">"Посмотреть на patrioty.org.ua"</string>
+    <string name="exit_text">"Для выхода нажмите дважды"</string>
+
+    <string name="dialog_ok">"Сохранить"</string>
+    <string name="dialog_back">"Назад"</string>
+    <string name="dialog_clean">"Очистить данные"</string>
+    <string name="dialog_repair">"Восстановить"</string>
+
+    <string name="repair_dialog_title">"Восстановление настроек"</string>
+    <string name="repair_dialog_text">"Восстановить стандартные настройки?"</string>
+
+    <string name="info_dialog_title">"Любимые страницы"</string>
+    <string name="info_dialog_text">"Любимых страниц: %1$d\nЗайнято памяти: %2$.4f Мб"</string>
+
+    <string name="snackbar_command">"Применить изменения"</string>
+
+    <string name="error">"Не удалось получить данные с сервера. Возможно нет соединения с сетью. Проверьте соединения и попробуйте еще раз."</string>
+
+    <string name="day_01">"Понедельник"</string>
+    <string name="day_02">"Вторник"</string>
+    <string name="day_03">"Среда"</string>
+    <string name="day_04">"Четверг"</string>
+    <string name="day_05">"Пятница"</string>
+    <string name="day_06">"Суббота"</string>
+    <string name="day_07">"Воскресенье"</string>
+
+    <string name="month_01">"января"</string>
+    <string name="month_02">"февраля"</string>
+    <string name="month_03">"марта"</string>
+    <string name="month_04">"апреля"</string>
+    <string name="month_05">"мая"</string>
+    <string name="month_06">"июня"</string>
+    <string name="month_07">"июля"</string>
+    <string name="month_08">"августа"</string>
+    <string name="month_09">"сентября"</string>
+    <string name="month_10">"октября"</string>
+    <string name="month_11">"ноября"</string>
+    <string name="month_12">"декабря"</string>
+
+    <string name="year">"года"</string>
+
+    <string name="page_error">"Не удалось открыть данную страницу. Возможно нет соединения с сетью. Проверьте соединения и попробуйте еще раз."</string>
+    <string name="favorite_list_empty">"Список любимых страниц пустой. Чтобы добавить страницу в любимые нажмите на значок звезды на ней."</string>
+
+    <string name="about_01">"Патриоты Украины - объединяйтесь!"</string>
+    <string name="about_02">"Миссия:"</string>
+    <string name="about_03">" • Объединение патриотов с целью усиления взаимодействия на благо Родины."</string>
+    <string name="about_04">" • Объединение активистов вокруг общественно значимых мероприятий, содействие развитию гражданского общества в Украине."</string>
+    <string name="about_05">" • Привлечение как можно более широкой аудитории к общественной деятельности."</string>
+    <string name="about_06">"Задачи проекта:"</string>
+    <string name="about_07">" • Освещение событий в Украине и мире в патриотическом свете. Информационно-новостная составляющая сайта - средство для привлечения патриотов к важным общественным вопросам и проектам."</string>
+    <string name="about_08">" • Содействие волонтерским объединением и общественным учреждениям в проведении патриотических мероприятий. Предоставление таким коммуникационной площадки."</string>
+
+    <string name="seekbar_title_1">Размер шрифта статей</string>
+    <string name="seekbar_title_2">Качество изображений</string>
+
+    <string name="settings_theme_title">"Тема: %1$s"</string>
+    <string name="settings_theme_hint">"Выберите светлую или темную тему оформления"</string>
+    <string name="settings_theme_choice_1">"светлая"</string>
+    <string name="settings_theme_choice_2">"темная"</string>
+
+    <string name="settings_language_title">"Язык: %1$s"</string>
+    <string name="settings_language_hint">"Выберите язык программы"</string>
+    <string name="settings_language_choice_1">"украинский"</string>
+    <string name="settings_language_choice_2">"русский"</string>
+
+    <string name="settings_orientation_title">"Ориентация экрана: %1$s"</string>
+    <string name="settings_orientation_hint">"Выберите портретную, ландшафтную или автоматическую ориентацию экрана"</string>
+    <string name="settings_orientation_choice_1">"портретная"</string>
+    <string name="settings_orientation_choice_2">"альбомная"</string>
+    <string name="settings_orientation_choice_3">"автоматическая"</string>
+
+    <string name="settings_font_size_title">"Размер шрифта статей: %1$s%%"</string>
+    <string name="settings_font_size_hint">"Выберите размер текста на страницах новостей"</string>
+
+    <string name="settings_preview_title">"Показывать превью: %1$s"</string>
+    <string name="settings_preview_hint">"Выберите режим отображения превью в списке новостей"</string>
+    <string name="settings_preview_choice_1">"да"</string>
+    <string name="settings_preview_choice_2">"нет"</string>
+
+    <string name="settings_quality_title">"Качество изображений: %1$s%%"</string>
+    <string formatted="false" name="settings_quality_hint">"Выберите качество изображений от 0% до 100%. Изображения с большим качеством занимают больше памяти при кэшировании"</string>
+
+    <string name="settings_link_title">"Показывать ссылку на оригинальную страницу: %1$s"</string>
+    <string name="settings_link_hint">"Выберите показывать ли ссылки на оригинальную страницу внизу экрана"</string>
+    <string name="settings_link_choice_1">"да"</string>
+    <string name="settings_link_choice_2">"нет"</string>
+
+    <string name="settings_sociality_title">"Показывать кнопки социальных сетей: %1$s"</string>
+    <string name="settings_sociality_hint">"Выберите показывать ли кнопки социальных сетей внизу экрана"</string>
+    <string name="settings_sociality_choice_1">"да"</string>
+    <string name="settings_sociality_choice_2">"нет"</string>
+
+</resources>

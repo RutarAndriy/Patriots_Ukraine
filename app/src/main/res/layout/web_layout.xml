@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/web_activity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.rutar.patriots_ukraine.Web_Activity"
+    android:background="?attr/list_item_color_1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/title_bar_background">
+
+            <TextView
+                android:text="@string/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/text_color_1"
+                android:textSize="@dimen/text_size_title"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="@dimen/title_padding"
+                android:layout_gravity="center"
+                tools:ignore="InvalidId"
+                android:id="@+id/web_title" />
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_gravity="left|center_vertical"
+                android:contentDescription=""
+                tools:ignore="ContentDescription,InvalidId"
+                android:id="@+id/back"
+                android:onClick="on_View_Click"
+                app:srcCompat="@drawable/ic_back"
+                android:tint="?attr/text_color_1"
+                android:padding="@dimen/icon_padding" />
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_gravity="right|center_vertical"
+                android:contentDescription=""
+                tools:ignore="ContentDescription,InvalidId"
+                android:id="@+id/favorite"
+                android:onClick="on_View_Click"
+                app:srcCompat="@drawable/ic_favorite_on"
+                android:tint="?attr/text_color_1"
+                android:padding="@dimen/icon_padding" />
+
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/list_item_color_1"
+            android:id="@+id/scroll_view">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="?attr/list_item_color_1">
+
+<!--                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/web_view"
+                    android:scrollbars="vertical"
+                    android:background="?attr/list_item_color_1"
+                    android:longClickable="false"
+                    android:clickable="false"
+                    android:visibility="invisible">
+
+                </WebView>-->
+
+                <com.rutar.patriots_ukraine.Custom_Web
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/web_view"
+                    android:scrollbars="vertical"
+                    android:background="?attr/list_item_color_1"
+                    android:longClickable="false"
+                    android:clickable="false"
+                    android:visibility="invisible">
+
+                </com.rutar.patriots_ukraine.Custom_Web>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/title_bar_background"
+                        android:visibility="invisible"
+                        android:id="@+id/link_layout">
+
+                        <TextView
+                            android:text="@string/link"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="?attr/text_color_1"
+                            android:textSize="@dimen/text_size_title"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:layout_gravity="center"
+                            tools:ignore="InvalidId"
+                            android:id="@+id/link"
+                            android:onClick="on_View_Click"
+                            android:clickable="true"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:id="@+id/share_layout">
+
+                        <TextView
+                            android:text="Facebook"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/share_facebook"
+                            android:layout_weight="1"
+                            android:background="#ff0000"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:textSize="@dimen/text_size_title"
+                            android:textStyle="bold"
+                            android:textColor="?attr/text_color_1" />
+
+                        <TextView
+                            android:text="Google+"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/share_google"
+                            android:layout_weight="1"
+                            android:background="#00ff00"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:textSize="@dimen/text_size_title"
+                            android:textStyle="bold"
+                            android:textColor="?attr/text_color_1" />
+
+                        <TextView
+                            android:text="VK"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/shere_VK"
+                            android:layout_weight="1"
+                            android:background="#0000ff"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:textSize="@dimen/text_size_title"
+                            android:textStyle="bold"
+                            android:textColor="?attr/text_color_1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/page_error"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/icon_size"
+            app:srcCompat="@drawable/ic_error"
+            android:id="@+id/error_image"
+            android:tint="?attr/text_color_2"
+            android:layout_marginTop="@dimen/error_text_margin" />
+
+        <TextView
+            android:text="@string/page_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/text_color_2"
+            android:textSize="@dimen/text_size_title"
+            android:layout_margin="@dimen/error_text_margin"
+            android:gravity="center_vertical|center_horizontal"
+            android:id="@+id/error_text" />
+
+    </LinearLayout>
+
+</FrameLayout>

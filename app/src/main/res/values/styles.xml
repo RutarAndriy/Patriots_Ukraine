@@ -1,0 +1,81 @@
+<resources>
+
+    <!-- Світла тема -->
+
+    <style name="FullScreen_Theme_Light"
+           parent="@style/Theme.AppCompat.Light">
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="alertDialogTheme">@style/Alert_Dialog_Style</item>
+
+        <item name="colorAccent">#6d9efe</item>                        <!-- Основний колір теми -->
+
+        <item name="logo">@drawable/ic_logo_light</item>
+        <item name="menu_logo">@drawable/ic_menu_logo_light</item>
+
+        <item name="link_color">#002e89</item>                              <!-- Колір посилань -->
+
+        <item name="text_color_1">#FFFFFF</item>                   <!-- Колір тексту заголовків -->
+        <item name="text_color_2">#404040</item>                         <!-- Колір тексту меню -->
+
+        <item name="list_item_color_1">#f9f9f9</item>                 <!-- 1 колір списку новин -->
+        <item name="list_item_color_2">#ececec</item>                 <!-- 2 колір списку новин -->
+
+        <item name="time_bar_background">#cbe2ff</item>            <!-- Колір блоку часу і дати -->
+        <item name="title_bar_background">#6d9efe</item>                  <!-- Колір заголовків -->
+
+        <item name="material_drawer_background">#00ffffff</item>       <!-- Колір бокового меню -->
+
+        <item name="mdtp_theme_dark">false</item>          <!-- Світла тема діалогу вибору дати -->
+
+    </style>
+
+    <!-- Темна тема -->
+
+    <style name="FullScreen_Theme_Dark"
+           parent="@style/Theme.AppCompat">
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="alertDialogTheme">@style/Alert_Dialog_Style</item>
+
+        <item name="colorAccent">#8b8b8b</item>                        <!-- Основний колір теми -->
+
+        <item name="logo">@drawable/ic_logo_dark</item>
+        <item name="menu_logo">@drawable/ic_menu_logo_dark</item>
+
+        <item name="link_color">#BBBBBB</item>                              <!-- Колір посилань -->
+
+        <item name="text_color_1">#F0F0F0</item>                   <!-- Колір тексту заголовків -->
+        <item name="text_color_2">#F0F0F0</item>                         <!-- Колір тексту меню -->
+
+        <item name="list_item_color_1">#454545</item>                 <!-- 1 колір списку новин -->
+        <item name="list_item_color_2">#555555</item>                 <!-- 2 колір списку новин -->
+
+        <item name="time_bar_background">#8b8b8b</item>            <!-- Колір блоку часу і дати -->
+        <item name="title_bar_background">#8b8b8b</item>                  <!-- Колір заголовків -->
+
+        <item name="material_drawer_background">#00ffffff</item>       <!-- Колір бокового меню -->
+
+        <item name="mdtp_theme_dark">true</item>            <!-- Темна тема діалогу вибору дати -->
+
+    </style>
+
+    <!-- Стиль діалогових вікон -->
+
+    <style name="Alert_Dialog_Style" parent="Theme.AppCompat.Dialog.Alert">
+
+        <item name="colorAccent">?attr/title_bar_background</item>                    <!--Кнопки-->
+        <item name="android:textColorPrimary">?attr/text_color_2</item>                <!--Текст-->
+        <item name="android:background">?attr/list_item_color_1</item>                   <!--Фон-->
+
+    </style>
+
+</resources>

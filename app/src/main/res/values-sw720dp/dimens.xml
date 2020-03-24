@@ -1,0 +1,95 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Scale coefficient: 2.0 -->
+
+    <!-- Логотип -->
+
+    <dimen name="text_size_logo">28sp</dimen>                       <!-- Розмір тексту логотипу -->
+
+    <dimen name="logo_width">280dp</dimen>                                 <!-- Ширина логотипу -->
+    <dimen name="logo_height">350dp</dimen>                                <!-- Висота логотипу -->
+    <dimen name="logo_text_margin">20dp</dimen>                      <!-- Відступи адреси сайту -->
+
+    <dimen name="error_text_margin">60dp</dimen>         <!-- Відступи повідомлення про помилку -->
+
+    <!-- Заголовки -->
+
+    <dimen name="icon_size">84dp</dimen>                                     <!-- Розмір іконок -->
+    <dimen name="icon_padding">10dp</dimen>                                <!-- Відступи іконок -->
+
+    <dimen name="title_padding">10dp</dimen>                                      <!-- Відступи -->
+    <dimen name="text_size_title">40sp</dimen>                     <!-- Розмір тексту заголовка -->
+
+    <!-- Бокове меню -->
+
+    <dimen name="menu_width">640dp</dimen>                                     <!-- Розмір меню -->
+
+    <dimen name="menu_icon_size">48dp</dimen>                                <!-- Розмір іконок -->
+    <dimen name="menu_text_size">32sp</dimen>                                <!-- Розмір тексту -->
+
+    <dimen name="menu_icon_margin">50dp</dimen>                            <!-- Відступи іконок -->
+    <dimen name="menu_text_margin">50dp</dimen>                            <!-- Відступи тексту -->
+    <dimen name="menu_vertical_padding">20dp</dimen>                  <!-- Вертикальні відступи -->
+
+    <dimen name="menu_logo_top_margin">44dp</dimen>                   <!-- Вертикальні відступи -->
+    <dimen name="menu_logo_bottom_margin">20dp</dimen>                <!-- Вертикальні відступи -->
+    <dimen name="menu_logo_horizontal_margin">64dp</dimen>          <!-- Горизонтальні відступи -->
+
+    <!-- Налаштування -->
+
+    <dimen name="settings_margin_top">8dp</dimen>                          <!-- Відступи зверху -->
+    <dimen name="settings_margin_left">14dp</dimen>                         <!-- Відступи зліва -->
+    <dimen name="settings_margin_right">20dp</dimen>                        <!-- Відступи справа-->
+    <dimen name="settings_margin_bottom">4dp</dimen>                        <!-- Відступи знизу -->
+
+    <dimen name="settings_image_size">64dp</dimen>                           <!-- Розмір іконок -->
+    <dimen name="settings_snackbar_size">48dp</dimen>                      <!-- Розмір снекбару -->
+
+    <!-- Список новин -->
+
+    <dimen name="news_list_margin">10dp</dimen>                                   <!-- Відступи -->
+    <dimen name="news_list_text_margin">6dp</dimen>                        <!-- Відступи тексту -->
+
+    <dimen name="port_im_prev_h">120dp</dimen>                       <!-- Висота зображення 70% -->
+    <dimen name="port_im_prev_w">160dp</dimen>                       <!-- Ширина зображення 70% -->
+
+    <dimen name="land_im_prev_h">170dp</dimen>                      <!-- Висота зображення 100% -->
+    <dimen name="land_im_prev_w">228dp</dimen>                      <!-- Ширина зображення 100% -->
+
+    <dimen name="text_size_list_item">40sp</dimen>            <!-- Розмір тексту в списку новин -->
+    <dimen name="text_size_list_item_time">28sp</dimen>  <!-- Розмір тексту в блоці дати і часу -->
+
+    <!-- Сторінка новин -->
+
+    <dimen name="base_font_size">34px</dimen>            <!-- Базовий розмір тексту на сторінці -->
+    <dimen name="base_page_margin">1dp</dimen>                 <!-- Базовий відступ на сторінці -->
+
+    <!-- Діалогові вікна -->
+
+    <dimen name="progress_wheel_width">12dp</dimen>                          <!-- Ширина кільця -->
+    <dimen name="progress_wheel_margin">20dp</dimen>                              <!-- Відступи -->
+    <dimen name="progress_wheel_diameter">120dp</dimen>                     <!-- Діаметр кільця -->
+
+    <dimen name="seekbar_text_size">32sp</dimen>                  <!-- Розмір тексту в діалогах -->
+    <dimen name="text_size_progress_dialog">28sp</dimen>          <!-- Розмір тексту в діалогах -->
+
+    <dimen name="dialog_title_size">40sp</dimen>              <!-- Розмір заголовків в діалогах -->
+    <dimen name="dialog_message_size">26sp</dimen>                <!-- Розмір тексту в діалогах -->
+    <dimen name="dialog_button_size">24sp</dimen>                 <!-- Розмір кнопок в діалогах -->
+
+    <dimen name="dialog_h_padding">18dp</dimen>        <!-- Горизонтальні відступи в заголовках -->
+    <dimen name="dialog_v_padding">6dp</dimen>           <!-- Вертикальні відступи в заголовках -->
+
+    <dimen name="dialog_m_padding_top">12dp</dimen>                   <!-- Вертикальні відступи -->
+    <dimen name="dialog_m_padding_bottom">0dp</dimen>                 <!-- Вертикальні відступи -->
+
+    <!-- Snackbar -->
+
+    <dimen name="sb__offset">0dp</dimen>                                     <!-- Відступ знизу -->
+    <dimen name="sb__text_padding_top">5dp</dimen>                                <!-- Відступи -->
+    <dimen name="sb__text_padding_bottom">0dp</dimen>                             <!-- Відступи -->
+    <dimen name="sb__text_padding_left">48dp</dimen>                              <!-- Відступи -->
+    <dimen name="sb__text_padding_right">48dp</dimen>                             <!-- Відступи -->
+    <dimen name="sb__text_size">28sp</dimen>                      <!-- Розмір тексту в snackbar -->
+
+</resources>

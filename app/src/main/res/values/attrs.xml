@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <attr name="logo" format="reference" />                                         <!-- Тризуб -->
+    <attr name="menu_logo" format="reference" />                             <!-- Логотип сайту -->
+
+    <attr name="link_color" format="color" />                               <!-- Колір посилань -->
+    <attr name="text_color_1" format="color" />                    <!-- Колір тексту заголовків -->
+    <attr name="text_color_2" format="color" />                          <!-- Колір тексту меню -->
+    <attr name="list_item_color_1" format="color" />                  <!-- 1 колір списку новин -->
+    <attr name="list_item_color_2" format="color" />                  <!-- 2 колір списку новин -->
+    <attr name="time_bar_background" format="color" />             <!-- Колір блоку часу і дати -->
+    <attr name="title_bar_background" format="color" />                   <!-- Колір заголовків -->
+
+</resources>
