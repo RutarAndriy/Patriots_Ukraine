@@ -2,7 +2,6 @@ package com.rutar.patriots_ukraine;
 
 import java.io.*;
 
-import android.annotation.SuppressLint;
 import android.os.*;
 import android.net.*;
 import android.util.Log;
@@ -18,6 +17,8 @@ import android.support.annotation.*;
 import static com.rutar.patriots_ukraine.Helper.*;
 import static com.rutar.patriots_ukraine.Html_Processor.*;
 import static com.rutar.patriots_ukraine.Patriots_Ukraine.*;
+
+import android.annotation.SuppressLint;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 

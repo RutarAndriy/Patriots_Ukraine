@@ -198,7 +198,7 @@ String url = "http://patrioty.org.ua/api/items-by-date.json?date=" + y + "-" +
              (m < 10 ? "0" + m : m) + "-" +
              (d < 10 ? "0" + d : d);
 
-    Log.e(TAG, url);
+Log.e(TAG, url);
 
 new Async_Tasks.Site_Parsing().execute(url);
 

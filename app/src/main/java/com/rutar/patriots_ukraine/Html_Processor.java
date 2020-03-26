@@ -1,14 +1,10 @@
 package com.rutar.patriots_ukraine;
 
 import java.io.*;
-import java.net.URL;
-import java.nio.charset.Charset;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
+import java.text.*;
 import java.util.*;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
+import org.json.*;
 import org.jsoup.*;
 import android.util.*;
 import org.jsoup.nodes.*;
@@ -331,9 +327,10 @@ item.set_Title(object.getString("title"));
 item.set_Page_Url(object.getString("uri"));
 item.set_Preview_Url("http://patrioty.org.ua" + object.getString("img"));
 
+long publish_time = Long.parseLong(object.getString("datepublish") + "000");
+
 Calendar calendar = Calendar.getInstance();
-calendar.setTime(new Date(Long.parseLong(object.getString("datepublish") + "000")));
-calendar.add(Calendar.HOUR, 2);
+calendar.setTimeInMillis(publish_time);
 
 item.set_Time(new SimpleDateFormat("HH:mm").format(calendar.getTime()));
 
