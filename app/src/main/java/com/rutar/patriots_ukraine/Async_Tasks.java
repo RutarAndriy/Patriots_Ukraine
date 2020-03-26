@@ -20,15 +20,30 @@ public class Async_Tasks {
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // Даний клас оброблює html сторінку та завантажує необхідні ресурси
 
-public static class Site_Preparation extends AsyncTask <Void, Void, String> {
+public static class Site_Preparation extends AsyncTask <Void, Void, Void> {
+
+private Intent intent = null;
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
 
 @Override
-protected String doInBackground (Void... params) {
+protected Void doInBackground (Void... params) {
 
-    try { String url = Html_Processor.process(list_item);
-          Thread.sleep(1000);
-          return url; }
-    catch (Exception e) { Log.e(TAG, "Error: " + e.getMessage()); }
+    long start_time = System.currentTimeMillis();
+
+    try { html = Html_Processor.process(list_item); }
+
+    catch (Exception e)
+        { html = null;
+          Log.e(TAG, "Error: " + e.getMessage()); }
+
+    intent = new Intent(patriots, Web_Activity.class);
+
+    long done_time = System.currentTimeMillis() - start_time;
+    long sleep_time = 700 - done_time;
+
+    try { Thread.sleep(sleep_time > 0 ? sleep_time : 1); }
+    catch (Exception e) {}
 
     return null;
 
@@ -37,15 +52,11 @@ protected String doInBackground (Void... params) {
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 @Override
-protected void onPostExecute (String result) {
+protected void onPostExecute (Void result) {
 
     super.onPostExecute(result);
 
-    html = result;
     progress.dismiss();
-
-    Intent intent = new Intent(patriots, Web_Activity.class);
-
     patriots.startActivity(intent);
     patriots.overridePendingTransition(R.anim.start_activity, R.anim.close_activity);
 

@@ -1,6 +1,8 @@
 package com.rutar.patriots_ukraine;
 
 import java.io.*;
+
+import android.annotation.SuppressLint;
 import android.os.*;
 import android.net.*;
 import android.util.Log;
@@ -34,6 +36,7 @@ private boolean is_recreate = false;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
+@SuppressLint("SourceLockedOrientationActivity")
 @Override
 protected void onCreate (Bundle bundle) {
 
@@ -82,7 +85,7 @@ settings_writer.putInt("s_theme", settings_theme);
 settings_writer.putInt("s_orientation", settings_orientation);
 settings_writer.putInt("s_link", settings_link);
 settings_writer.putInt("s_sociality", settings_sociality);
-settings_writer.commit();
+settings_writer.apply();
 
 }
 
@@ -112,103 +115,11 @@ is_Favorite();
 error_layout = findViewById(R.id.page_error);
 
 web_View = (Custom_Web) findViewById(R.id.web_view);
-web_View.getSettings().setJavaScriptEnabled(false);
 
+web_View.getSettings().setJavaScriptEnabled(false);
 web_View.setOnLongClickListener(on_long_click_listener);
 
-
-
-/*    web_View.setWebChromeClient(new WebChromeClient(){
-
-        @Override
-        public void onProgressChanged(WebView view, int newProgress) {
-            super.onProgressChanged(view, newProgress);
-            if (newProgress == 100) {     web_View.startAnimation(AnimationUtils.loadAnimation(patriots, R.anim.test)); }
-        }
-    });*/
-
-/*web_View.addOnLayoutChangeListener(new View.OnLayoutChangeListener() {
-    @Override
-    public void onLayoutChange(View v, int left, int top, int right, int bottom, int oldLeft, int oldTop, int oldRight, int oldBottom) {
-
-
-
-        Log.e(TAG, "Height: " + web_View.getContentHeight());
-
-        if (web_View.getContentHeight() != 0) {
-
-            final Handler handler2 = new Handler();
-            handler2.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-
-                    web_View.startAnimation(AnimationUtils.loadAnimation(patriots, R.anim.test));
-
-                }
-            }, 500);
-
-        }
-
-
-    }
-});*/
-
-//web_View.setTag(web_View.getVisibility());
-web_View.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-    @Override
-    public void onGlobalLayout() {
-
-
-
-/*        Log.e(TAG, "Visibility: " + web_View.getVisibility());
-
-        int newVis = web_View.getVisibility();
-        int progress = web_View.getProgress();
-
-        if((int)web_View.getTag() != newVis)
-        {
-            web_View.setTag(web_View.getVisibility());
-            //visibility has changed
-        }
-
-        if (progress == 100 && newVis == View.VISIBLE) {
-            web_View.startAnimation(AnimationUtils.loadAnimation(patriots, R.anim.button_press));
-        }*/
-    }
-});
-
-/*Thread thread = new Thread(new Runnable() {
-    @Override
-    public void run() {
-
-        while (true) {
-
-            Log.e(TAG, "Height: " + web_View.getContentHeight());
-
-            try { Thread.sleep(5); }
-            catch (Exception e) {}
-
-        }
-
-    }
-});
-thread.start();*/
-
-/*final Handler handler2 = new Handler();
-handler2.postDelayed(new Runnable() { @Override
-public void run() {
-
-    for (int z = 0; z < 100; z++) {
-        Log.e(TAG, "Height: " + web_View.getContentHeight());
-        try { Thread.sleep(300); }
-        catch (Exception e) {}
-
-    }
-    }}, 50);*/
-
-final Handler handler = new Handler();
-handler.postDelayed(new Runnable() { @Override
-                                     public void run() { load_URL_Data(); }}, 50);
+load_URL_Data();
 
 }
 
