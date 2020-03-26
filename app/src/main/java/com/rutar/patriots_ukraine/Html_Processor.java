@@ -28,14 +28,17 @@ public static String time_tmp;
 
 private static ArrayList<String> files_links;
 
-private static String[] remove_list = new String[]{ "head",
-                                                    "footer",
-                                                    "comments",
-                                                    "left-sidebar",
-                                                    "right-sidebar",
-                                                    "widget-readMore",
-                                                    "ads-below-article",
-                                                    "ads-center-bottom" };
+private static String[] remove_list = new String[]
+    { "head",
+      "footer",
+      "comments",
+      "left-sidebar",
+      "right-sidebar",
+      "social-buttons",
+      "instagram-media",
+      "widget-readMore",
+      "ads-below-article",
+      "ads-center-bottom" };
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -105,16 +108,26 @@ else if ((!vc.isEmpty() || !fr.isEmpty()) && element.text().isEmpty()) { element
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 doc.select("br").remove();
-doc.getElementsByAttributeValue("id", "more-items-infinite").remove();
 
-for (String list : remove_list) { doc.getElementsByClass(list).remove(); }
 
 doc.getElementsByTag("video").remove();
 doc.getElementsByTag("object").remove();
+doc.getElementsByTag("script").remove();
 doc.getElementsByTag("iframe").remove();
 doc.getElementsByTag("script").remove();
 doc.getElementsByTag("noscript").remove();
+doc.getElementsByClass("left-sidebar").remove();
+doc.getElementsByClass("header-banner").remove();
+
+doc.select("[style*=background: #ff5658;]").remove();
+
 doc.getElementsByClass("video-container").remove();
+doc.getElementsByClass("main-menu container").remove();
+
+doc.getElementsByAttributeValue("rel", "shortcut icon").remove();
+doc.getElementsByAttributeValue("id", "more-items-infinite").remove();
+
+for (String list : remove_list) { doc.getElementsByClass(list).remove(); }
 
 Elements h2 = doc.getElementsByTag("h2");
 for (int z = 0; z < h2.size(); z++) { if (z > 0) { h2.get(z).remove(); } }
