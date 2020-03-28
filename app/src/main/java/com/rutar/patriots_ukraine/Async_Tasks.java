@@ -71,8 +71,19 @@ public static class Site_Parsing extends AsyncTask <String, Void, Void > {
 @Override
 protected Void doInBackground (String... arg) {
 
-    try { news_array = Html_Processor.get_News(arg[0]);
-          Thread.sleep(1000); }
+    try {
+
+    long start_time = System.currentTimeMillis();
+
+    // Отримуємо список новин
+    news_array = Html_Processor.get_News(arg[0]);
+
+    long work_time = System.currentTimeMillis() - start_time;
+    long sleep_time = 1000 - work_time;
+
+    Thread.sleep(sleep_time > 0 ? sleep_time : 1);
+
+    }
 
     catch (Exception e) { news_array = null;
                           print_Stack_Trace(e); }
