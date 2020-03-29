@@ -14,7 +14,9 @@
                  android:label="@string/app_name"
                  android:screenOrientation="sensor"
                  android:theme="@style/Launch_Theme"
-                 tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+                 android:usesCleartextTraffic="true"
+                 tools:ignore="AllowBackup,GoogleAppIndexingWarning"
+                 tools:targetApi="m">
 
         <!-- Activity - заставка -->
         <activity android:name=".Start_Activity">
