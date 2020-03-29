@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Дні -->
+    <string name="day_01">Понеділок</string>
+    <string name="day_02">Вівторок</string>
+    <string name="day_03">Середа</string>
+    <string name="day_04">Четвер</string>
+    <string name="day_05">П\'ятниця</string>
+    <string name="day_06">Субота</string>
+    <string name="day_07">Неділя</string>
+
+    <!-- Місяці -->
+    <string name="month_01">січня</string>
+    <string name="month_02">лютого</string>
+    <string name="month_03">березня</string>
+    <string name="month_04">квітня</string>
+    <string name="month_05">травня</string>
+    <string name="month_06">червня</string>
+    <string name="month_07">липня</string>
+    <string name="month_08">серпня</string>
+    <string name="month_09">вересня</string>
+    <string name="month_10">жовтня</string>
+    <string name="month_11">листопада</string>
+    <string name="month_12">грудня</string>
+
+    <!-- Рік -->
+    <string name="year">року</string>
+
+    <!-- напр. 25 квітня 1995 року -->
+
+</resources>

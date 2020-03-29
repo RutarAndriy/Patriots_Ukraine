@@ -1,0 +1,71 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme_Violet_Light" parent="Theme_Basic_Light">
+
+        <item name="colorAccent">#ab47bc</item>
+        <item name="colorPrimary">#ab47bc</item>
+        <item name="colorPrimaryDark">#7d3389</item>
+        <item name="colorControlNormal">#404040</item>
+        <item name="colorControlActivated">#ab47bc</item>
+        <item name="colorControlHighlight">#ab47bc</item>
+
+        <item name="color_link">#7d3389</item>
+        <item name="color_background">#F7F7F7</item>
+        <item name="color_trident_in">#F7F7F7</item>
+        <item name="color_trident_out">#ab47bc</item>
+
+        <item name="color_outline">#7d3389</item>
+        <item name="color_theme_text">#ab47bc</item>
+
+        <item name="color_behavior_in">#ab47bc</item>
+        <item name="color_behavior_out">#F7F7F7</item>
+        <item name="color_behavior_text">#F7F7F7</item>
+
+        <item name="color_list_item_light">#F7F7F7</item>
+        <item name="color_list_item_dark">#F0E1F3</item>
+
+        <item name="color_text_light">#F7F7F7</item>
+        <item name="color_text_dark">#404040</item>
+
+        <item name="scrollbar">@xml/scrollbar_violet</item>
+        <item name="search_run">@xml/search_run_violet_light</item>
+        <item name="share_loading">@xml/share_loading_violet_light</item>
+
+    </style>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <style name="Theme_Violet_Dark" parent="Theme_Basic_Dark">
+
+        <item name="colorAccent">#ab47bc</item>
+        <item name="colorPrimary">#ab47bc</item>
+        <item name="colorPrimaryDark">#7d3389</item>
+        <item name="colorControlNormal">#F7F7F7</item>
+        <item name="colorControlActivated">#F7F7F7</item>
+        <item name="colorControlHighlight">#F7F7F7</item>
+
+        <item name="color_link">#F7F7F7</item>
+        <item name="color_background">#282828</item>
+        <item name="color_trident_in">#F7F7F7</item>
+        <item name="color_trident_out">#ab47bc</item>
+
+        <item name="color_outline">#F7F7F7</item>
+        <item name="color_theme_text">#F7F7F7</item>
+
+        <item name="color_behavior_in">#ab47bc</item>
+        <item name="color_behavior_out">#F7F7F7</item>
+        <item name="color_behavior_text">#F7F7F7</item>
+
+        <item name="color_list_item_light">#282828</item>
+        <item name="color_list_item_dark">#404040</item>
+
+        <item name="color_text_light">#F7F7F7</item>
+        <item name="color_text_dark">#F7F7F7</item>
+
+        <item name="scrollbar">@xml/scrollbar_violet</item>
+        <item name="search_run">@xml/search_run_violet_dark</item>
+        <item name="share_loading">@xml/share_loading_violet_dark</item>
+
+    </style>
+
+</resources>

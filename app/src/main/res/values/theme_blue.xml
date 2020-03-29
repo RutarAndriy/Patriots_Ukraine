@@ -1,0 +1,72 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme_Blue_Light" parent="Theme_Basic_Light">
+
+        <item name="colorAccent">#29b6f6</item>
+        <item name="colorPrimary">#29b6f6</item>
+        <item name="colorPrimaryDark">#2090c3</item>
+        <item name="colorControlNormal">#404040</item>
+        <item name="colorControlActivated">#29b6f6</item>
+        <item name="colorControlHighlight">#29b6f6</item>
+
+        <item name="color_link">#2090c3</item>
+        <item name="color_background">#F7F7F7</item>
+        <item name="color_trident_in">#F7F7F7</item>
+        <item name="color_trident_out">#29b6f6</item>
+
+        <item name="color_outline">#282828</item>
+        <item name="color_theme_text">#29b6f6</item>
+
+        <item name="color_behavior_in">#29b6f6</item>
+        <item name="color_behavior_out">#F7F7F7</item>
+        <item name="color_behavior_text">#F7F7F7</item>
+
+        <item name="color_list_item_light">#F7F7F7</item>
+        <item name="color_list_item_dark">#DDF3FC</item>
+
+        <item name="color_text_light">#F7F7F7</item>
+        <item name="color_text_dark">#404040</item>
+
+        <item name="scrollbar">@xml/scrollbar_blue</item>
+        <item name="search_run">@xml/search_run_blue_light</item>
+        <item name="share_loading">@xml/share_loading_blue_light</item>
+
+    </style>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <style name="Theme_Blue_Dark" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorAccent">#29b6f6</item>
+        <item name="colorPrimary">#29b6f6</item>
+        <item name="colorPrimaryDark">#2090c3</item>
+        <item name="colorControlNormal">#404040</item>
+        <item name="colorControlActivated">#29b6f6</item>
+        <item name="colorControlHighlight">#29b6f6</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+
+        <item name="color_link">#29b6f6</item>
+        <item name="color_background">#282828</item>
+        <item name="color_trident_in">#282828</item>
+        <item name="color_trident_out">#29b6f6</item>
+
+        <item name="color_outline">#2090c3</item>
+        <item name="color_theme_text">#29b6f6</item>
+
+        <item name="color_behavior_in">#29b6f6</item>
+        <item name="color_behavior_out">#282828</item>
+        <item name="color_behavior_text">#282828</item>
+
+        <item name="color_list_item_light">#282828</item>
+        <item name="color_list_item_dark">#404040</item>
+
+        <item name="color_text_light">#282828</item>
+        <item name="color_text_dark">#F7F7F7</item>
+
+        <item name="scrollbar">@xml/scrollbar_blue</item>
+        <item name="search_run">@xml/search_run_blue_dark</item>
+        <item name="share_loading">@xml/share_loading_blue_dark</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginBottom="@dimen/dialog_button_margin"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/dialog_preview"
+            android:layout_width="@dimen/image_prev_w"
+            android:layout_height="@dimen/image_prev_w"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:adjustViewBounds="true"
+            android:tint="?attr/colorPrimary"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_menu" />
+
+        <TextView
+            android:id="@+id/dialog_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/value_normal"
+            android:text="Dialog message"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal" />
+
+        <!-- Список для діалога "відкрити за допомогою"-->
+        <ListView
+            android:id="@+id/dialog_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarThumbHorizontal="?attr/scrollbar"
+            android:scrollbarThumbVertical="?attr/scrollbar"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/calendar_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarThumbHorizontal="?attr/scrollbar"
+            android:scrollbarThumbVertical="?attr/scrollbar"
+            android:verticalScrollbarPosition="left">
+
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                android:id="@+id/calendar_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:mcv_allowClickDaysOutsideCurrentMonth="false"
+                app:mcv_arrowColor="?attr/colorPrimary"
+                app:mcv_headerTextAppearance="@style/Date_Picker_Header"
+                app:mcv_selectionColor="?attr/colorPrimary"
+                app:mcv_showOtherDates="all"
+                app:mcv_weekDayTextAppearance="@style/Date_Picker_Header" />
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_vertical">
+
+
+        <TextView
+            android:id="@+id/button_negative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value_xlarge"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="left|center_vertical"
+            android:onClick="on_Item_Click"
+            android:paddingBottom="@dimen/value_small"
+            android:paddingTop="@dimen/value_small"
+            android:text="Negative"
+            android:textColor="?attr/color_theme_text"
+            android:textSize="@dimen/size_text_normal"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/button_neutral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="on_Item_Click"
+            android:paddingBottom="@dimen/value_small"
+            android:paddingTop="@dimen/value_small"
+            android:text="Neutral"
+            android:textColor="?attr/color_theme_text"
+            android:textSize="@dimen/size_text_normal"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/button_positive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/value_xlarge"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="right|center_vertical"
+            android:onClick="on_Item_Click"
+            android:paddingBottom="@dimen/value_small"
+            android:paddingTop="@dimen/value_small"
+            android:text="Positive"
+            android:textColor="?attr/color_theme_text"
+            android:textSize="@dimen/size_text_normal"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,71 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme_Indigo_Light" parent="Theme_Basic_Light">
+
+        <item name="colorAccent">#3F51B5</item>
+        <item name="colorPrimary">#3F51B5</item>
+        <item name="colorPrimaryDark">#303F9F</item>
+        <item name="colorControlNormal">#404040</item>
+        <item name="colorControlActivated">#3F51B5</item>
+        <item name="colorControlHighlight">#3F51B5</item>
+
+        <item name="color_link">#303F9F</item>
+        <item name="color_background">#F7F7F7</item>
+        <item name="color_trident_in">#F7F7F7</item>
+        <item name="color_trident_out">#3F51B5</item>
+
+        <item name="color_outline">#303F9F</item>
+        <item name="color_theme_text">#3F51B5</item>
+
+        <item name="color_behavior_in">#3F51B5</item>
+        <item name="color_behavior_out">#F7F7F7</item>
+        <item name="color_behavior_text">#F7F7F7</item>
+
+        <item name="color_list_item_light">#F7F7F7</item>
+        <item name="color_list_item_dark">#D9DCF0</item>
+
+        <item name="color_text_light">#F7F7F7</item>
+        <item name="color_text_dark">#404040</item>
+
+        <item name="scrollbar">@xml/scrollbar_indigo</item>
+        <item name="search_run">@xml/search_run_indigo_light</item>
+        <item name="share_loading">@xml/share_loading_indigo_light</item>
+
+    </style>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <style name="Theme_Indigo_Dark" parent="Theme_Basic_Dark">
+
+        <item name="colorAccent">#3F51B5</item>
+        <item name="colorPrimary">#3F51B5</item>
+        <item name="colorPrimaryDark">#303F9F</item>
+        <item name="colorControlNormal">#404040</item>
+        <item name="colorControlActivated">#F7F7F7</item>
+        <item name="colorControlHighlight">#F7F7F7</item>
+
+        <item name="color_link">#3F51B5</item>
+        <item name="color_background">#282828</item>
+        <item name="color_trident_in">#E6E6E6</item>
+        <item name="color_trident_out">#3F51B5</item>
+
+        <item name="color_outline">#F7F7F7</item>
+        <item name="color_theme_text">#F7F7F7</item>
+
+        <item name="color_behavior_in">#3F51B5</item>
+        <item name="color_behavior_out">#F7F7F7</item>
+        <item name="color_behavior_text">#F7F7F7</item>
+
+        <item name="color_list_item_light">#282828</item>
+        <item name="color_list_item_dark">#404040</item>
+
+        <item name="color_text_light">#F7F7F7</item>
+        <item name="color_text_dark">#E0E3F2</item>
+
+        <item name="scrollbar">@xml/scrollbar_indigo</item>
+        <item name="search_run">@xml/search_run_indigo_dark</item>
+        <item name="share_loading">@xml/share_loading_indigo_dark</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_settings"
+    android:background="?attr/color_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarThumbHorizontal="?attr/scrollbar"
+    android:scrollbarThumbVertical="?attr/scrollbar">
+
+    <LinearLayout
+        android:id="@+id/settings_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Мова -->
+        <include layout="@layout/layout_settings_item" android:id="@+id/item_language"/>
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/erl_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/color_list_item_dark"
+            app:ael_interpolator="accelerateDecelerate"
+            app:ael_orientation="vertical"
+            app:ael_duration="300">
+
+            <include layout="@layout/layout_settings_language"/>
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?attr/color_list_item_dark" />
+
+        <!-- Тема тема, світла/темна, статусбар -->
+        <include layout="@layout/layout_settings_item" android:id="@+id/item_theme"/>
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/erl_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/color_list_item_dark"
+            app:ael_interpolator="accelerateDecelerate"
+            app:ael_orientation="vertical"
+            app:ael_duration="600">
+
+            <include layout="@layout/layout_settings_theme"/>
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?attr/color_list_item_dark" />
+
+        <!-- Орієнтація екрану -->
+        <include layout="@layout/layout_settings_item" android:id="@+id/item_orientation"/>
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/erl_orientation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/color_list_item_dark"
+            app:ael_interpolator="accelerateDecelerate"
+            app:ael_orientation="vertical"
+            app:ael_duration="275">
+
+            <include layout="@layout/layout_settings_orientation"/>
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?attr/color_list_item_dark" />
+
+        <!-- Налаштування панелі поділитися новиною -->
+        <include layout="@layout/layout_settings_item" android:id="@+id/item_share"/>
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/erl_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/color_list_item_dark"
+            app:ael_interpolator="accelerateDecelerate"
+            app:ael_orientation="vertical"
+            app:ael_duration="275">
+
+            <include layout="@layout/layout_settings_share"/>
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?attr/color_list_item_dark" />
+
+        <!-- Налаштування вигляду і розмірів шрифтів -->
+        <include layout="@layout/layout_settings_item" android:id="@+id/item_font"/>
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/erl_font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/color_list_item_dark"
+            app:ael_interpolator="accelerateDecelerate"
+            app:ael_orientation="vertical"
+            app:ael_duration="650">
+
+            <include layout="@layout/layout_settings_font"/>
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?attr/color_list_item_dark" />
+
+        <!-- Налаштування анімації -->
+        <include layout="@layout/layout_settings_item" android:id="@+id/item_animation"/>
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/erl_animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/color_list_item_dark"
+            app:ael_interpolator="accelerateDecelerate"
+            app:ael_orientation="vertical"
+            app:ael_duration="700">
+
+            <include layout="@layout/layout_settings_animation"/>
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?attr/color_list_item_dark" />
+
+        <!-- Додаткові налаштування -->
+        <include layout="@layout/layout_settings_item" android:id="@+id/item_extra"/>
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/erl_extra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/color_list_item_dark"
+            app:ael_interpolator="accelerateDecelerate"
+            app:ael_orientation="vertical"
+            app:ael_duration="300">
+
+            <include layout="@layout/layout_settings_extra"/>
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?attr/color_list_item_dark" />
+
+    </LinearLayout>
+
+</ScrollView>

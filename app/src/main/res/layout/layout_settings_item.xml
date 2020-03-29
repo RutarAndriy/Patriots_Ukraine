@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/color_background"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:onClick="on_Settings_Item_Click"
+    android:paddingBottom="@dimen/value_small"
+    android:paddingLeft="@dimen/value_large"
+    android:paddingRight="@dimen/value_normal"
+    android:paddingTop="@dimen/value_large">
+
+    <ImageView
+        android:id="@+id/settings_image"
+        android:layout_width="@dimen/share_web_view_padding"
+        android:layout_height="@dimen/share_web_view_padding"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="false"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/value_small"
+        android:layout_marginLeft="@dimen/value_xxlarge"
+        android:layout_marginTop="@dimen/value_small"
+        android:tint="?attr/color_text_dark"
+        app:srcCompat="@drawable/ic_clear" />
+
+    <TextView
+        android:id="@+id/settings_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_marginRight="@dimen/value_large"
+        android:layout_toLeftOf="@+id/settings_image"
+        android:text="@android:string/unknownName"
+        android:textColor="?attr/color_text_dark"
+        android:textSize="@dimen/size_text_large" />
+
+    <TextView
+        android:id="@+id/settings_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_title"
+        android:layout_marginRight="@dimen/value_large"
+        android:layout_toLeftOf="@+id/settings_image"
+        android:text="@android:string/unknownName"
+        android:textColor="?attr/color_text_dark"
+        android:textSize="@dimen/size_text_small"
+        android:textStyle="italic" />
+
+</RelativeLayout>

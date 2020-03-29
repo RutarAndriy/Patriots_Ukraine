@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_about"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?attr/color_background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarThumbHorizontal="?attr/scrollbar"
+        android:scrollbarThumbVertical="?attr/scrollbar">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="@dimen/size_text_large"
+                android:layout_marginTop="@dimen/size_text_large"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_text_normal"
+                    android:layout_marginLeft="@dimen/size_text_normal"
+                    android:layout_marginRight="@dimen/size_text_normal"
+                    android:gravity="center_horizontal"
+                    android:text="@string/about_title"
+                    android:textColor="?attr/color_text_dark"
+                    android:textSize="@dimen/size_text_large"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_text_normal"
+                    android:layout_marginRight="@dimen/size_text_normal"
+                    android:text="@string/about_missions"
+                    android:textColor="?attr/color_text_dark"
+                    android:textSize="@dimen/size_text_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_text_normal"
+                    android:layout_marginRight="@dimen/size_text_normal"
+                    android:text="@string/about_mission_01"
+                    android:textColor="?attr/color_text_dark"
+                    android:textSize="@dimen/size_text_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_text_normal"
+                    android:layout_marginRight="@dimen/size_text_normal"
+                    android:text="@string/about_mission_02"
+                    android:textColor="?attr/color_text_dark"
+                    android:textSize="@dimen/size_text_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_text_normal"
+                    android:layout_marginLeft="@dimen/size_text_normal"
+                    android:layout_marginRight="@dimen/size_text_normal"
+                    android:text="@string/about_mission_03"
+                    android:textColor="?attr/color_text_dark"
+                    android:textSize="@dimen/size_text_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_text_normal"
+                    android:layout_marginRight="@dimen/size_text_normal"
+                    android:text="@string/about_goals"
+                    android:textColor="?attr/color_text_dark"
+                    android:textSize="@dimen/size_text_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_text_normal"
+                    android:layout_marginRight="@dimen/size_text_normal"
+                    android:text="@string/about_goal_01"
+                    android:textColor="?attr/color_text_dark"
+                    android:textSize="@dimen/size_text_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_text_normal"
+                    android:layout_marginLeft="@dimen/size_text_normal"
+                    android:layout_marginRight="@dimen/size_text_normal"
+                    android:text="@string/about_goal_02"
+                    android:textColor="?attr/color_text_dark"
+                    android:textSize="@dimen/size_text_normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/app_name"
+                    android:textColor="?attr/color_text_dark"
+                    android:textSize="@dimen/size_text_normal" />
+
+                <TextView
+                    android:id="@+id/version_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/app_version"
+                    android:textColor="?attr/color_text_dark"
+                    android:textSize="@dimen/size_text_normal" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

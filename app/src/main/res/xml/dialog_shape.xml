@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@android:color/transparent" />
+
+    <padding android:top="@dimen/dialog_global_padding_vertical"
+             android:bottom="@dimen/dialog_global_padding_vertical"
+             android:left="@dimen/dialog_global_padding_horizontal"
+             android:right="@dimen/dialog_global_padding_horizontal" />
+
+</shape>

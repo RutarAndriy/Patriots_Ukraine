@@ -1,0 +1,72 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme_Orange_Light" parent="Theme_Basic_Light">
+
+        <item name="colorAccent">#ffc107</item>
+        <item name="colorPrimary">#ffc107</item>
+        <item name="colorPrimaryDark">#DBA107</item>
+        <item name="colorControlNormal">#404040</item>
+        <item name="colorControlActivated">#404040</item>
+        <item name="colorControlHighlight">#404040</item>
+
+        <item name="color_link">#404040</item>
+        <item name="color_background">#F7F7F7</item>
+        <item name="color_trident_in">#F7F7F7</item>
+        <item name="color_trident_out">#ffc107</item>
+
+        <item name="color_outline">#646464</item>
+        <item name="color_theme_text">#404040</item>
+
+        <item name="color_behavior_in">#ffc107</item>
+        <item name="color_behavior_out">#404040</item>
+        <item name="color_behavior_text">#404040</item>
+
+        <item name="color_list_item_light">#F7F7F7</item>
+        <item name="color_list_item_dark">#FEF4D8</item>
+
+        <item name="color_text_light">#F7F7F7</item>
+        <item name="color_text_dark">#404040</item>
+
+        <item name="scrollbar">@xml/scrollbar_orange</item>
+        <item name="search_run">@xml/search_run_orange_light</item>
+        <item name="share_loading">@xml/share_loading_orange_light</item>
+
+    </style>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <style name="Theme_Orange_Dark" parent="Theme_Basic_Dark">
+
+        <item name="colorAccent">#ffc107</item>
+        <item name="colorPrimary">#ffc107</item>
+        <item name="colorPrimaryDark">#DBA107</item>
+        <item name="colorControlNormal">#404040</item>
+        <item name="colorControlActivated">#ffc107</item>
+        <item name="colorControlHighlight">#ffc107</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+
+        <item name="color_link">#ffc107</item>
+        <item name="color_background">#282828</item>
+        <item name="color_trident_in">#282828</item>
+        <item name="color_trident_out">#ffc107</item>
+
+        <item name="color_outline">#DBA107</item>
+        <item name="color_theme_text">#ffc107</item>
+
+        <item name="color_behavior_in">#ffc107</item>
+        <item name="color_behavior_out">#282828</item>
+        <item name="color_behavior_text">#282828</item>
+
+        <item name="color_list_item_light">#282828</item>
+        <item name="color_list_item_dark">#404040</item>
+
+        <item name="color_text_light">#282828</item>
+        <item name="color_text_dark">#F7F7F7</item>
+
+        <item name="scrollbar">@xml/scrollbar_orange</item>
+        <item name="search_run">@xml/search_run_orange_dark</item>
+        <item name="share_loading">@xml/share_loading_orange_dark</item>
+
+    </style>
+
+</resources>

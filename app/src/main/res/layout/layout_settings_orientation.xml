@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:id="@+id/rg_orientation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/orientation_port"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/settings_orientation_02"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/orientation_land"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/settings_orientation_03"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/orientation_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/settings_orientation_04"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+    </RadioGroup>
+
+</RelativeLayout>

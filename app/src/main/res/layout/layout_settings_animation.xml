@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:id="@+id/rg_anim_titles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_titles_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_02"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_titles_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_03"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_titles_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_04"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_titles_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_05"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_titles_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_06"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_titles_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_07"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/animation_divider_01"
+        android:layout_below="@id/rg_anim_titles"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?attr/color_background" />
+
+    <RadioGroup
+        android:id="@+id/rg_anim_open"
+        android:layout_below="@id/animation_divider_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_open_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_08"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_open_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_09"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_open_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_10"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_open_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_11"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_open_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_12"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_open_06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_13"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_open_07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_14"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_open_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_15"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/animation_divider_02"
+        android:layout_below="@id/rg_anim_open"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?attr/color_background" />
+
+    <RadioGroup
+        android:id="@+id/rg_anim_close"
+        android:layout_below="@id/animation_divider_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_close_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_16"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_close_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_17"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_close_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_18"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_close_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_19"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_close_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_20"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_close_06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_21"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_close_07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_22"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_close_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_23"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/animation_divider_03"
+        android:layout_below="@id/rg_anim_close"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?attr/color_background" />
+
+    <RadioGroup
+        android:id="@+id/rg_anim_preview"
+        android:layout_below="@id/animation_divider_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_preview_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_24"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_preview_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_25"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_preview_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_26"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_preview_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_27"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_preview_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_28"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_preview_06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_29"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_preview_07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_30"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/anim_preview_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_animation_31"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"/>
+
+    </RadioGroup>
+
+</RelativeLayout>

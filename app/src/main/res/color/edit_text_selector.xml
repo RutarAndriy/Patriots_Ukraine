@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Натискання -->
+    <item android:state_pressed="true" android:color="?attr/color_theme_text"/>
+
+    <!-- У фокусі -->
+    <item android:state_focused="true" android:color="?attr/color_theme_text"/>
+
+    <!-- Без фокусу -->
+    <item android:color="?attr/color_text_dark"/>
+
+</selector>

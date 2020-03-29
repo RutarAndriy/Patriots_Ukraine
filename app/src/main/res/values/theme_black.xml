@@ -1,0 +1,71 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme_Black_Light" parent="Theme_Basic_Light">
+
+        <item name="colorAccent">#000000</item>
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">#282828</item>
+        <item name="colorControlNormal">#404040</item>
+        <item name="colorControlActivated">#000000</item>
+        <item name="colorControlHighlight">#000000</item>
+
+        <item name="color_link">#404040</item>
+        <item name="color_background">#F7F7F7</item>
+        <item name="color_trident_in">#F7F7F7</item>
+        <item name="color_trident_out">#000000</item>
+
+        <item name="color_outline">#282828</item>
+        <item name="color_theme_text">#000000</item>
+
+        <item name="color_behavior_in">#000000</item>
+        <item name="color_behavior_out">#F7F7F7</item>
+        <item name="color_behavior_text">#F7F7F7</item>
+
+        <item name="color_list_item_light">#F7F7F7</item>
+        <item name="color_list_item_dark">#D7D7D7</item>
+
+        <item name="color_text_light">#F7F7F7</item>
+        <item name="color_text_dark">#404040</item>
+
+        <item name="scrollbar">@xml/scrollbar_black</item>
+        <item name="search_run">@xml/search_run_black_light</item>
+        <item name="share_loading">@xml/share_loading_black_light</item>
+
+    </style>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <style name="Theme_Black_Dark" parent="Theme_Basic_Dark">
+
+        <item name="colorAccent">#000000</item>
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">#282828</item>
+        <item name="colorControlNormal">#F7F7F7</item>
+        <item name="colorControlActivated">#F7F7F7</item>
+        <item name="colorControlHighlight">#F7F7F7</item>
+
+        <item name="color_link">#F7F7F7</item>
+        <item name="color_background">#282828</item>
+        <item name="color_trident_in">#000000</item>
+        <item name="color_trident_out">#F7F7F7</item>
+
+        <item name="color_outline">#C9C9C9</item>
+        <item name="color_theme_text">#F7F7F7</item>
+
+        <item name="color_behavior_in">#282828</item>
+        <item name="color_behavior_out">#F7F7F7</item>
+        <item name="color_behavior_text">#F7F7F7</item>
+
+        <item name="color_list_item_light">#282828</item>
+        <item name="color_list_item_dark">#404040</item>
+
+        <item name="color_text_light">#F7F7F7</item>
+        <item name="color_text_dark">#F7F7F7</item>
+
+        <item name="scrollbar">@xml/scrollbar_black</item>
+        <item name="search_run">@xml/search_run_black_dark</item>
+        <item name="share_loading">@xml/share_loading_black_dark</item>
+
+    </style>
+
+</resources>

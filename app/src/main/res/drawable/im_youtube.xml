@@ -1,0 +1,21 @@
+<vector android:height="336dp" android:viewportHeight="337.5"
+    android:viewportWidth="480.0" android:width="480dp" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--?attr/color_share-->
+    <path android:fillAlpha="1" android:fillColor="?attr/color_trident_out"
+        android:fillType="nonZero"
+        android:pathData="M123,0C81.2,0 45.1,3.5 26.2,23.7 5.4,44 -0,89.8 -0,135.9l0,65.8c0,46 4.4,85 24.1,110C40.9,329.3 81.2,337.5 123,337.5l233.9,0c41.9,0 82.1,-5.8 98.4,-25.1 18.8,-19.2 24.6,-64.7 24.6,-110.8l0,-65.8c0,-46 -5.7,-88.2 -23.6,-110.4C436.6,3.9 398.8,0 357,0Z"
+        android:strokeAlpha="1" android:strokeColor="#00000000"
+        android:strokeLineJoin="round" android:strokeWidth="4"/>
+
+    <path android:fillAlpha="1" android:fillColor="?attr/color_trident_in"
+        android:fillType="nonZero"
+        android:pathData="m190.1,229.3 l0.4,-65.6 0,-67.1 65.6,33.1 67.2,33.6 -65.9,32.5z"
+        android:strokeAlpha="0.62371132" android:strokeColor="#00000000" android:strokeWidth="4"/>
+    <path android:fillAlpha="0.4375" android:fillColor="#666666"
+
+        android:fillType="nonZero"
+        android:pathData="M323.3,163.2 L305,172.4 190.5,96.6Z"
+        android:strokeAlpha="0.62371132" android:strokeColor="#00000000" android:strokeWidth="4"/>
+
+</vector>

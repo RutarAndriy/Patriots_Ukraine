@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_tool_bar"
+    android:background="?attr/colorPrimary">
+
+    <FrameLayout
+        android:id="@+id/toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_tool_bar"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/toolbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:clickable="true"
+            android:onClick="on_Toolbar_Item_Click"
+            android:padding="@dimen/value_large"
+            android:text="@string/app_name"
+            android:textColor="?attr/color_text_light"
+            android:textSize="@dimen/size_text_large"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/toolbar_icon_left"
+            android:layout_width="@dimen/size_tool_bar"
+            android:layout_height="@dimen/size_tool_bar"
+            android:layout_gravity="left|center_vertical"
+            android:clickable="true"
+            android:onClick="on_Toolbar_Item_Click"
+            android:padding="@dimen/value_large"
+            android:tint="?attr/color_text_light"
+            app:srcCompat="@drawable/ic_menu" />
+
+        <ImageView
+            android:id="@+id/toolbar_icon_right"
+            android:layout_width="@dimen/size_tool_bar"
+            android:layout_height="@dimen/size_tool_bar"
+            android:layout_gravity="right|center_vertical"
+            android:clickable="true"
+            android:onClick="on_Toolbar_Item_Click"
+            android:padding="@dimen/value_large"
+            android:tint="?attr/color_text_light"
+            app:srcCompat="@drawable/ic_search" />
+    </FrameLayout>
+
+    <!--        <EditText
+            android:id="@+id/textedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hello text 2"
+            android:nextFocusUp="@id/textedit"
+            android:nextFocusLeft="@id/textedit"
+            android:textColorLink="#0000ff"
+            android:textColorHint="#ff0000"
+            android:textColorHighlight="#ff44cc"
+            android:textColor="#0000ff"
+            android:layout_marginLeft="@dimen/size_tool_bar"
+            android:layout_marginRight="@dimen/size_tool_bar"
+            android:layout_gravity="bottom|center_horizontal" />-->
+
+
+</FrameLayout>

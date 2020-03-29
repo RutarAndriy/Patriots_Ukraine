@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Дані про програму -->
+    <string name="app_name">Патріоти Ukraine Tests</string>
+    <string name="app_site">www.patrioty.org.ua</string>
+    <string name="app_version">версія %1$s</string>
+
+    <!-- Пункти меню -->
+    <string name="menu_news">Новини</string>
+    <string name="menu_favorite">Улюблені</string>
+    <string name="menu_settings">Налаштування</string>
+    <string name="menu_about">Про програму</string>
+    <string name="menu_exit">Вихід</string>
+
+    <!-- Меню "Про програму" -->
+    <string name="about_title">Патріоти України - єднаймося!</string>
+    <string name="about_missions">Місія:</string>
+    <string name="about_mission_01"> • Об\'єднання патріотів з метою посилення взаємодії на благо Батьківщини.</string>
+    <string name="about_mission_02"> • Гуртування активістів навколо суспільно значимих заходів, сприяння розбудові громадянського суспільства в Україні.</string>
+    <string name="about_mission_03"> • Залучення якомога ширшої аудиторії до громадської діяльності.</string>
+    <string name="about_goals">Завдання проекту:</string>
+    <string name="about_goal_01"> • Висвітлення подій в Україні та світі в патріотичному світлі. Інформаційно-новинарна складова сайту - засіб для залучення патріотів до громадськозначимих питань та проектів.</string>
+    <string name="about_goal_02"> • Сприяння волонтерським об’єднанням та громадським установам у проведенні патріотичних заходів. Надання таким комунікаційного майданчика.</string>
+
+    <!-- Інші строки -->
+    <string name="progress_get_news">Отримання списку новин</string>
+    <string name="progress_get_page">Завантаження даних</string>
+    <string name="exit_message">Для виходу натисніть двічі</string>
+    <string name="search_word">Пошук за запитом \"%1$s\"</string>
+
+</resources>

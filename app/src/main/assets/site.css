@@ -1,23 +1,38 @@
+/* Визначення шрифта для відображення */
+@font-face {
+    font-family: "Page_Font";
+    src: url('file:///android_asset/fonts/#FT');
+}
+
 /* Основний контейнер */
 body {
-	height: 100%;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    height: 100%;
+    font-family: "Page_Font";
 	font-size: #FSpx;
-	line-height: 1.38;
-    color: #C0;                                                                  /* Колір тексту */
+	line-height: 1.25;
+    color: #C3;                                                                  /* Колір тексту */
 	background: #C1;                                                            /* Фоновий колір */
+	-webkit-tap-highlight-color: rgba(0,0,0, 0.1);   /* Вимкнення "підсвітки" елементів сторінки */
 }
 
 /* Кольори посилань */
-A         { color: #C2; }                                                     /* Колір посилання */
-A:visited { color: #C3; }                                       /* Колір використаного посилання */
-A:active  { color: #C4; }                                           /* Колір активного посилання */
+A         { color: #C5; }                                                     /* Колір посилання */
+A:active  { color: #C2; background: #C4; }                          /* Колір активного посилання */
+A:visited { color: #C2; background: #C4; }                      /* Колір використаного посилання */
 
 /* Параметри картинок */
 img {
-    min-width: 100%;
-    max-width: 100%;
+    width: 100%;
     height: auto;
+}
+
+/* Параметри блоків */
+p {
+    display: block;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
 }
 
 /* Заголовок статті */
@@ -25,8 +40,8 @@ h2 {
 	font-size: 140%;
 	margin: 3% 0.5% 1.5%;
 	text-align: left;
-    line-height: 1.2;
-    color: #C5;                                                        /* Колір заголовку новини */
+    line-height: 1.15;
+    color: #C3;                                                        /* Колір заголовку новини */
 }
 
 /* Блок дати і часу новини */
@@ -35,9 +50,9 @@ h2 {
 	float: left;
 	font-size: 90%;
 	text-align: center;
-	padding: 0% 1.5%;
-	color: #C6;                                                                  /* Колір тексту */
-	background: #C7;                                                               /* Колір фону */
+	padding: 0.5% 1.5%;
+	color: #C2;                                                                  /* Колір тексту */
+	background: #C4;                                                               /* Колір фону */
 }
 
 /* Блок переходу на новий рядок після блоку часу і дати */
@@ -48,10 +63,10 @@ h2 {
 }
 
 /* Підзаголовок статті */
-.center-content .item-subtitle {
+.item-subtitle {
 	font-style: italic;
 	margin: 1.5% 0% 0%;
-    line-height: 1.3;
+    line-height: 1.15;
 }
 
 /* Підпис зображення */
@@ -61,8 +76,9 @@ h2 {
 	font-style: italic;
     line-height: 1.3;
     margin: 0% 0% 0%;
-    color: #C8;                                                                  /* Колір тексту */
-    background: #C9;                                                               /* Колір фону */
+    padding: 1.5% 3%;
+    color: #C2;                                                                  /* Колір тексту */
+    background: #C4;                                                               /* Колір фону */
 }
 
 /* Підпис авторських прав */
@@ -72,6 +88,6 @@ h2 {
 
 /* Відступи по боках сторінки */
 .center-content {
-    padding-left: #M1%;
-    padding-right: #M2%;
+    padding-left: #MG%;
+    padding-right: #MG%;
 }

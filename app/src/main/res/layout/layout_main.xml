@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- Toolbar layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/layout_toolbar"
+                 android:id="@+id/toolbar"
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/size_tool_bar" />
+
+        <android.support.v4.widget.DrawerLayout android:id="@+id/drawer_layout"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_below="@id/toolbar"
+                                                tools:openDrawer="start">
+
+            <include
+                layout="@layout/layout_displayable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <include
+                layout="@layout/layout_settings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <include
+                layout="@layout/layout_about"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <android.support.design.widget.NavigationView
+                android:id="@+id/drawer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="?attr/colorPrimaryDark">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbarThumbHorizontal="?attr/scrollbar"
+                    android:scrollbarThumbVertical="?attr/scrollbar"
+                    android:verticalScrollbarPosition="left">
+
+                    <include
+                        layout="@layout/layout_drawer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible" />
+
+                </ScrollView>
+
+            </android.support.design.widget.NavigationView>
+
+        </android.support.v4.widget.DrawerLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/layout_bottom_snackbar" />
+
+    <FrameLayout
+        android:id="@+id/debug_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/debug_space"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/size_tool_bar"
+                android:gravity="center"
+                android:text="Debug Mode"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/size_text_small" />
+
+            <TextView
+                android:id="@+id/debug_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/debug_space"
+                android:layout_gravity="right"
+                android:background="#aa000000"
+                android:gravity="center"
+                android:text="Debug Mode"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/size_text_small" />
+
+            <TextView
+                android:id="@+id/debug_text_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/debug_title"
+                android:layout_gravity="right"
+                android:layout_marginTop="1dp"
+                android:background="#aa000000"
+                android:paddingLeft="@dimen/value_small"
+                android:paddingRight="@dimen/value_small"
+                android:text="Debug view"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/size_text_small" />
+
+            <TextView
+                android:id="@+id/debug_text_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/debug_text_01"
+                android:layout_gravity="right"
+                android:layout_marginTop="1dp"
+                android:background="#aa000000"
+                android:paddingLeft="@dimen/value_small"
+                android:paddingRight="@dimen/value_small"
+                android:text="Debug view"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/size_text_small" />
+
+            <TextView
+                android:id="@+id/debug_text_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/debug_text_02"
+                android:layout_gravity="right"
+                android:layout_marginTop="1dp"
+                android:background="#aa000000"
+                android:paddingLeft="@dimen/value_small"
+                android:paddingRight="@dimen/value_small"
+                android:text="Debug view"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/size_text_small" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- Drawer Layout -->
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,81 +1,77 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Світла тема -->
+    <!-- ////////////////////////////////////////////////////////////////////////////////////// -->
 
-    <style name="FullScreen_Theme_Light"
-           parent="@style/Theme.AppCompat.Light">
+    <style name="Theme_Yellow" parent="Theme.AppCompat.Light.NoActionBar">
 
-        <item name="windowNoTitle">true</item>
-        <item name="windowActionBar">false</item>
-        <item name="android:windowFullscreen">true</item>
-        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorAccent">#f1f100</item>
+        <item name="colorPrimary">#f1f100</item>
+        <item name="colorPrimaryDark">#dcdc00</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
 
-        <item name="alertDialogTheme">@style/Alert_Dialog_Style</item>
+        <item name="color_list_item_light">#616161</item>
+        <item name="color_list_item_dark">#4F4F4F</item>
+        <item name="color_background">#4d4d4d</item>
+        <item name="color_text_light">#464646</item>
+        <item name="color_text_dark">#f1f1f1</item>
+        <item name="color_link">#f1f100</item>
 
-        <item name="colorAccent">#6d9efe</item>                        <!-- Основний колір теми -->
-
-        <item name="logo">@drawable/ic_logo_light</item>
-        <item name="menu_logo">@drawable/ic_menu_logo_light</item>
-
-        <item name="link_color">#002e89</item>                              <!-- Колір посилань -->
-
-        <item name="text_color_1">#FFFFFF</item>                   <!-- Колір тексту заголовків -->
-        <item name="text_color_2">#404040</item>                         <!-- Колір тексту меню -->
-
-        <item name="list_item_color_1">#f9f9f9</item>                 <!-- 1 колір списку новин -->
-        <item name="list_item_color_2">#ececec</item>                 <!-- 2 колір списку новин -->
-
-        <item name="time_bar_background">#cbe2ff</item>            <!-- Колір блоку часу і дати -->
-        <item name="title_bar_background">#6d9efe</item>                  <!-- Колір заголовків -->
-
-        <item name="material_drawer_background">#00ffffff</item>       <!-- Колір бокового меню -->
-
-        <item name="mdtp_theme_dark">false</item>          <!-- Світла тема діалогу вибору дати -->
+        <item name="colorControlNormal">#f1f1f1</item>
+        <item name="colorControlActivated">#f1f100</item>
+        <item name="colorControlHighlight">#f1f100</item>
 
     </style>
 
-    <!-- Темна тема -->
+    <!-- /// Світла тема вибору дати ////////////////////////////////////////////////////////// -->
 
-    <style name="FullScreen_Theme_Dark"
-           parent="@style/Theme.AppCompat">
+    <style name="Date_Picker_Light" parent="TextAppearance.MaterialCalendarWidget.Date">
+        <item name="android:textColor">@color/date_picker_light</item>
+    </style>
 
-        <item name="windowNoTitle">true</item>
+    <!-- /// Темна тема вибору дати /////////////////////////////////////////////////////////// -->
+
+    <style name="Date_Picker_Dark" parent="TextAppearance.MaterialCalendarWidget.Date">
+        <item name="android:textColor">@color/date_picker_dark</item>
+    </style>
+
+    <!-- /// Тема заголовка діалогу вибору дати /////////////////////////////////////////////// -->
+
+    <style name="Date_Picker_Header" parent="TextAppearance.MaterialCalendarWidget.Date">
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- /// Тема, яка відображається при запуску програми //////////////////////////////////// -->
+
+    <style name="Launch_Theme" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="android:windowBackground">@xml/splash_screen</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimaryDark">#0073FF</item>
         <item name="windowActionBar">false</item>
-        <item name="android:windowFullscreen">true</item>
-        <item name="android:windowContentOverlay">@null</item>
-
-        <item name="alertDialogTheme">@style/Alert_Dialog_Style</item>
-
-        <item name="colorAccent">#8b8b8b</item>                        <!-- Основний колір теми -->
-
-        <item name="logo">@drawable/ic_logo_dark</item>
-        <item name="menu_logo">@drawable/ic_menu_logo_dark</item>
-
-        <item name="link_color">#BBBBBB</item>                              <!-- Колір посилань -->
-
-        <item name="text_color_1">#F0F0F0</item>                   <!-- Колір тексту заголовків -->
-        <item name="text_color_2">#F0F0F0</item>                         <!-- Колір тексту меню -->
-
-        <item name="list_item_color_1">#454545</item>                 <!-- 1 колір списку новин -->
-        <item name="list_item_color_2">#555555</item>                 <!-- 2 колір списку новин -->
-
-        <item name="time_bar_background">#8b8b8b</item>            <!-- Колір блоку часу і дати -->
-        <item name="title_bar_background">#8b8b8b</item>                  <!-- Колір заголовків -->
-
-        <item name="material_drawer_background">#00ffffff</item>       <!-- Колір бокового меню -->
-
-        <item name="mdtp_theme_dark">true</item>            <!-- Темна тема діалогу вибору дати -->
+        <item name="windowNoTitle">true</item>
 
     </style>
 
-    <!-- Стиль діалогових вікон -->
+    <!-- Діалогове вікно браузера -->
 
-    <style name="Alert_Dialog_Style" parent="Theme.AppCompat.Dialog.Alert">
+    <style name="Dialog_Web_View" parent="android:Theme.Dialog">
 
-        <item name="colorAccent">?attr/title_bar_background</item>                    <!--Кнопки-->
-        <item name="android:textColorPrimary">?attr/text_color_2</item>                <!--Текст-->
-        <item name="android:background">?attr/list_item_color_1</item>                   <!--Фон-->
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
 
+        <item name="android:layout_marginTop">@dimen/share_web_view_padding</item>
+        <item name="android:layout_marginBottom">@dimen/share_web_view_padding</item>
+
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowIsFloating">false</item>-->
+
+    </style>
+
+    <!-- /// Колір активної підказки для EditText ///////////////////////////////////////////// -->
+
+    <style name="Text_Input_Layout_Active_Style" parent="@android:style/TextAppearance">
+        <item name="android:textColor">?attr/color_theme_text</item>
     </style>
 
 </resources>

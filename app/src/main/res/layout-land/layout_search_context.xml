@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/color_background"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:adjustViewBounds="true"
+            android:paddingLeft="@dimen/menu_text_margin"
+            android:paddingRight="@dimen/menu_text_margin"
+            android:visibility="visible"
+            app:srcCompat="@drawable/im_site_logo_search" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/value_xlarge">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_field_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/value_xxxlarge"
+                android:layout_marginRight="@dimen/value_small"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:hintTextAppearance="@style/Text_Input_Layout_Active_Style"
+                android:textColorHint="?attr/color_text_dark">
+
+                <EditText
+                    android:id="@+id/search_text_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/dialog_title_search"
+                    android:inputType="textCapSentences"
+                    android:maxLength="25"
+                    android:textColor="@color/edit_text_selector" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="false"
+                android:clickable="true"
+                android:onClick="on_Behavior_Item_Click"
+                android:paddingBottom="@dimen/value_large"
+                android:paddingLeft="@dimen/value_small"
+                android:paddingRight="@dimen/value_normal"
+                android:paddingTop="@dimen/value_large">
+
+                <ImageView
+                    android:id="@+id/search_progress_bar"
+                    android:layout_width="@dimen/size_search_progress"
+                    android:layout_height="@dimen/size_search_progress"
+                    android:layout_gravity="center"
+                    app:srcCompat="?attr/search_run"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/search_progress_bar_im"
+                    android:layout_width="@dimen/size_tool_bar"
+                    android:layout_height="@dimen/size_tool_bar"
+                    android:layout_gravity="center" />
+
+                <ImageView
+                    android:id="@+id/search_button"
+                    android:layout_width="@dimen/size_tool_bar"
+                    android:layout_height="@dimen/size_tool_bar"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:onClick="on_Item_Click"
+                    android:padding="@dimen/value_large"
+                    android:tint="?attr/color_behavior_text"
+                    app:srcCompat="@drawable/ic_search" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="@string/dialog_message_search"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_large" />
+    </LinearLayout>
+
+</LinearLayout>

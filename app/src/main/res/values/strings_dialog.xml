@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Кнопки діалогових вікон -->
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_back">Назад</string>
+    <string name="dialog_clean">Очистити дані</string>
+    <string name="dialog_repair">Відновити</string>
+    <string name="dialog_search">Пошук</string>
+    <string name="dialog_rate_no">Ніколи</string>
+    <string name="dialog_rate_yes">Оцінити</string>
+    <string name="dialog_rate_later">Пізніше</string>
+    <string name="dialog_save">Зберегти</string>
+    <string name="dialog_goto">Перейти</string>
+    <string name="dialog_show">Перегляд</string>
+    <string name="dialog_restart">Перезавантажити</string>
+
+    <!-- Заголовки діалогових вікон -->
+    <string name="dialog_favorite_pages">Улюблені сторінки</string>
+    <string name="dialog_title_share">Поділитися у %1$s</string>
+    <string name="dialog_title_search">Пошук новин</string>
+    <string name="dialog_title_repair">Відновлення налаштувань</string>
+    <string name="dialog_title_toolbar">%1$s %2$s %3$s року</string>
+    <string name="dialog_title_date_picker">Виберіть дату</string>
+    <string name="dialog_title_open_in_browser">Відкрити за допомогою</string>
+    <string name="dialog_title_share_f">Facebook</string>
+    <string name="dialog_title_share_t">Twitter</string>
+
+    <!-- Повідомлення діалогових вікон -->
+    <string name="dialog_message_info">Улюблених сторінок: %1$d\nЗайнято пам\'яті: %2$.1f Мб\n\nЩоб видалити всі улюблені сторінки натисніть кнопку \"Очистити дані\"</string>
+    <string name="dialog_message_restore">Відновити стандартні налаштування?</string>
+    <string name="dialog_message_search">Введіть слово чи декілька слів, за якими слід виконати пошук новин</string>
+    <string name="dialog_message_rate">Якщо вам сподобалася програма %1$s, будь ласка, знайдіть хвилинку щоб оцінити її.</string>
+
+</resources>

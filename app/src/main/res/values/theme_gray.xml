@@ -1,0 +1,71 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme_Grey_Light" parent="Theme_Basic_Light">
+
+        <item name="colorAccent">#bdbdbd</item>
+        <item name="colorPrimary">#bdbdbd</item>
+        <item name="colorPrimaryDark">#8a8a8a</item>
+        <item name="colorControlNormal">#404040</item>
+        <item name="colorControlActivated">#404040</item>
+        <item name="colorControlHighlight">#404040</item>
+
+        <item name="color_link">#404040</item>
+        <item name="color_background">#F7F7F7</item>
+        <item name="color_trident_in">#404040</item>
+        <item name="color_trident_out">#bdbdbd</item>
+
+        <item name="color_outline">#646464</item>
+        <item name="color_theme_text">#404040</item>
+
+        <item name="color_behavior_in">#bdbdbd</item>
+        <item name="color_behavior_out">#404040</item>
+        <item name="color_behavior_text">#404040</item>
+
+        <item name="color_list_item_light">#F7F7F7</item>
+        <item name="color_list_item_dark">#E3E3E3</item>
+
+        <item name="color_text_light">#404040</item>
+        <item name="color_text_dark">#404040</item>
+
+        <item name="scrollbar">@xml/scrollbar_gray</item>
+        <item name="search_run">@xml/search_run_gray_light</item>
+        <item name="share_loading">@xml/share_loading_gray_light</item>
+
+    </style>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <style name="Theme_Gray_Dark" parent="Theme_Basic_Dark">
+
+        <item name="colorAccent">#bdbdbd</item>
+        <item name="colorPrimary">#bdbdbd</item>
+        <item name="colorPrimaryDark">#8a8a8a</item>
+        <item name="colorControlNormal">#404040</item>
+        <item name="colorControlActivated">#bdbdbd</item>
+        <item name="colorControlHighlight">#bdbdbd</item>
+
+        <item name="color_link">#bdbdbd</item>
+        <item name="color_background">#282828</item>
+        <item name="color_trident_in">#282828</item>
+        <item name="color_trident_out">#bdbdbd</item>
+
+        <item name="color_outline">#282828</item>
+        <item name="color_theme_text">#bdbdbd</item>
+
+        <item name="color_behavior_in">#bdbdbd</item>
+        <item name="color_behavior_out">#282828</item>
+        <item name="color_behavior_text">#282828</item>
+
+        <item name="color_list_item_light">#282828</item>
+        <item name="color_list_item_dark">#404040</item>
+
+        <item name="color_text_light">#282828</item>
+        <item name="color_text_dark">#F7F7F7</item>
+
+        <item name="scrollbar">@xml/scrollbar_gray</item>
+        <item name="search_run">@xml/search_run_gray_dark</item>
+        <item name="share_loading">@xml/share_loading_gray_dark</item>
+
+    </style>
+
+</resources>

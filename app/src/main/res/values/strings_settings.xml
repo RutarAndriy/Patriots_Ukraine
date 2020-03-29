@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Мова -->
+    <string name="settings_language_00">Мова: %1$s</string>
+    <string name="settings_language_01">Налаштування мови</string>
+    <string name="settings_language_02">Українська</string>
+    <string name="settings_language_03">Російська</string>
+    <string name="settings_language_04">Англійська</string>
+    <string name="settings_language_05">За промовчанням</string>
+
+    <!-- Тема -->
+    <string name="settings_theme_00">Тема: %1$s</string>
+    <string name="settings_theme_01">Налаштування теми</string>
+    <string name="settings_theme_02">Світла тема</string>
+    <string name="settings_theme_03">Темна тема</string>
+    <string name="settings_theme_04">Відображати статус бар</string>
+    <string name="settings_theme_05">Стандартна</string>
+    <string name="settings_theme_06">Червона</string>
+    <string name="settings_theme_07">Помаранчева</string>
+    <string name="settings_theme_08">Жовта</string> yellow
+    <string name="settings_theme_09">Лаймова</string> lime
+    <string name="settings_theme_10">Зелена</string> green
+    <string name="settings_theme_11">Зеленувато-блакитна</string> teal
+    <string name="settings_theme_12">Блакитна</string> blue
+    <string name="settings_theme_13">Індиго</string> indigo
+    <string name="settings_theme_14">Фіолетова</string> violet
+    <string name="settings_theme_15">Сіра</string> gray
+    <string name="settings_theme_16">Чорна</string> black
+    <string name="settings_theme_17">Випадкова</string>
+
+    <!-- Орієнтація екрану -->
+    <string name="settings_orientation_00">Орієнтація екрану: %1$s</string>
+    <string name="settings_orientation_01">Налаштування орієнтації екрану</string>
+    <string name="settings_orientation_02">Портретна</string>
+    <string name="settings_orientation_03">Ландшафтна</string>
+    <string name="settings_orientation_04">Автоматична</string>
+
+    <!-- Панель "Поділитися новиною" -->
+    <string name="settings_share_00">Панель \"Поділитися новиною\"</string>
+    <string name="settings_share_01">Налаштування панелі \"поділитися новиною\"</string>
+    <string name="settings_share_02">Facebook</string>
+    <string name="settings_share_03">Twitter</string>
+    <string name="settings_share_04">Посилання на новину</string>
+
+    <!-- Шрифт -->
+    <string name="settings_font_00">Шрифт: %1$s</string>
+    <string name="settings_font_01">Налаштування типу та розміру шрифта</string>
+    <string name="settings_font_02">Розмір шрифту: %1$s</string>
+
+    <!-- Анімація -->
+    <string name="settings_animation_00">Анімація: стандартні налаштування</string>
+    <string name="settings_animation_01">Налаштування анімації</string>
+    <string name="settings_animation_02">Заголовок: 1</string>
+    <string name="settings_animation_03">Заголовок: 2</string>
+    <string name="settings_animation_04">Заголовок: 3</string>
+    <string name="settings_animation_05">Заголовок: 4</string>
+    <string name="settings_animation_06">Заголовок: 5</string>
+    <string name="settings_animation_07">Заголовок: без анімації</string>
+    <string name="settings_animation_08">Відкривання вікна: 1</string>
+    <string name="settings_animation_09">Відкривання вікна: 2</string>
+    <string name="settings_animation_10">Відкривання вікна: 3</string>
+    <string name="settings_animation_11">Відкривання вікна: 4</string>
+    <string name="settings_animation_12">Відкривання вікна: 5</string>
+    <string name="settings_animation_13">Відкривання вікна: 6</string>
+    <string name="settings_animation_14">Відкривання вікна: 7</string>
+    <string name="settings_animation_15">Відкривання вікна: без анімації</string>
+    <string name="settings_animation_16">Закривання вікна: 1</string>
+    <string name="settings_animation_17">Закривання вікна: 2</string>
+    <string name="settings_animation_18">Закривання вікна: 3</string>
+    <string name="settings_animation_19">Закривання вікна: 4</string>
+    <string name="settings_animation_20">Закривання вікна: 5</string>
+    <string name="settings_animation_21">Закривання вікна: 6</string>
+    <string name="settings_animation_22">Закривання вікна: 7</string>
+    <string name="settings_animation_23">Закривання вікна: без анімації</string>
+    <string name="settings_animation_24">Прев\'ю: 1</string>
+    <string name="settings_animation_25">Прев\'ю: 2</string>
+    <string name="settings_animation_26">Прев\'ю: 3</string>
+    <string name="settings_animation_27">Прев\'ю: 4</string>
+    <string name="settings_animation_28">Прев\'ю: 5</string>
+    <string name="settings_animation_29">Прев\'ю: 6</string>
+    <string name="settings_animation_30">Прев\'ю: 7</string>
+    <string name="settings_animation_31">Прев\'ю: без анімації</string>
+
+    <!-- Додаткові налаштування -->
+    <string name="settings_extra_00">Додаткові налаштування</string>
+    <string name="settings_extra_01">Додаткові налаштування для програми</string>
+    <string name="settings_extra_02">Відображати прев\'ю</string>
+    <string name="settings_extra_03">Відображати розширену дату в заголовку</string>
+    <string name="settings_extra_04">Відображати переходи на наступний/попередній день</string>
+    <string name="settings_extra_05">Дозволити швидке масштабування сторінки</string>
+
+</resources>

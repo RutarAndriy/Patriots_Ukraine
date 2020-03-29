@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/get_prev"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/value_large"
+        android:layout_marginLeft="@dimen/value_xxlarge"
+        android:layout_marginRight="@dimen/value_xxxlarge"
+        android:layout_marginTop="@dimen/value_large"
+        android:clickable="true"
+        android:onClick="on_Behavior_Item_Click"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_tool_bar"
+            android:clickable="false"
+            android:paddingBottom="@dimen/value_large"
+            android:paddingLeft="@dimen/value_normal"
+            android:paddingRight="@dimen/value_small"
+            android:paddingTop="@dimen/value_large"
+            android:tint="?attr/color_behavior_text"
+            app:srcCompat="@drawable/ic_news_next" />
+
+        <TextView
+            android:id="@+id/get_prev_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/value_xxlarge"
+            android:gravity="center"
+            android:text="@android:string/unknownName"
+            android:textColor="?attr/color_behavior_text"
+            android:textSize="@dimen/size_text_large" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/get_next"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_marginBottom="@dimen/value_large"
+        android:layout_marginLeft="@dimen/value_xxxlarge"
+        android:layout_marginRight="@dimen/value_xxlarge"
+        android:layout_marginTop="@dimen/value_large"
+        android:clickable="true"
+        android:onClick="on_Behavior_Item_Click"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/get_next_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/value_xxlarge"
+            android:gravity="center"
+            android:text="@android:string/unknownName"
+            android:textColor="?attr/color_behavior_text"
+            android:textSize="@dimen/size_text_large" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_tool_bar"
+            android:clickable="false"
+            android:paddingBottom="@dimen/value_large"
+            android:paddingLeft="@dimen/value_small"
+            android:paddingRight="@dimen/value_normal"
+            android:paddingTop="@dimen/value_large"
+            android:tint="?attr/color_behavior_text"
+            app:srcCompat="@drawable/ic_news_previous" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bottom_pane_02"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom|center"
+        android:background="?attr/color_background"
+        android:visibility="gone" />
+
+</FrameLayout>

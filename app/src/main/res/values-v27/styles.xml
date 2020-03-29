@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme_Yellow" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorAccent">#f1f100</item>
+        <item name="colorPrimary">#f1f100</item>
+        <item name="colorPrimaryDark">#dcdc00</item>
+        <item name="android:navigationBarColor">#f1f100</item>
+        <item name="android:navigationBarDividerColor">#4F4F4F</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+        <item name="color_list_item_light">#616161</item>
+        <item name="color_list_item_dark">#4F4F4F</item>
+        <item name="color_background">#4d4d4d</item>
+        <item name="color_text_light">#464646</item>
+        <item name="color_text_dark">#f1f1f1</item>
+        <item name="color_link">#f1f100</item>
+
+        <item name="colorControlNormal">#f1f1f1</item>
+        <item name="colorControlActivated">#f1f100</item>
+        <item name="colorControlHighlight">#f1f100</item>
+
+    </style>
+</resources>

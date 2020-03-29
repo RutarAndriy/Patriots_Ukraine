@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:id="@+id/rg_font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/font_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TruthCYR_Light"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"
+            tools:ignore="HardcodedText"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/font_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VDS_Thin"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"
+            tools:ignore="HardcodedText"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/font_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GOST_2.304_A"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"
+            tools:ignore="HardcodedText"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/font_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ISOCPEUR"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"
+            tools:ignore="HardcodedText"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/font_05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Azbuka04"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"
+            tools:ignore="HardcodedText"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/font_06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BenguiatGothicC"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"
+            tools:ignore="HardcodedText"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/font_07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Courier10_Win95BT"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"
+            tools:ignore="HardcodedText"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/font_08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a_OldTyper"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"
+            tools:ignore="HardcodedText"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/font_09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ubuntu"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"
+            tools:ignore="HardcodedText"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/font_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yeseva_One"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"
+            tools:ignore="HardcodedText"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/font_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anonymous_Pro"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"
+            tools:ignore="HardcodedText"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/font_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atavyros"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"
+            tools:ignore="HardcodedText"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/font_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SplendorC"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"
+            tools:ignore="HardcodedText"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/font_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Segoe_Script"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"
+            tools:ignore="HardcodedText"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/font_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B52"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"
+            tools:ignore="HardcodedText"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/font_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iFlash_502"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            app:buttonTint="?attr/color_text_dark"
+            tools:ignore="HardcodedText"/>
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/font_divider_01"
+        android:layout_below="@id/rg_font"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?attr/color_background" />
+
+    <RelativeLayout
+        android:layout_below="@id/font_divider_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/font_size_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="?attr/color_text_dark"
+            android:textSize="@dimen/size_text_normal"
+            android:layout_marginTop="@dimen/value_small"
+            android:text="@string/settings_font_02"/>
+
+        <SeekBar
+            android:max="8"
+            android:progress="3"
+            android:id="@+id/font_size_seekbar"
+            android:layout_below="@id/font_size_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_normal"
+            android:layout_marginBottom="@dimen/value_normal"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

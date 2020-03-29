@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Помилки -->
+    <string name="error_get_news">Не вдалося оновити список новин</string>
+    <string name="error_open_page">Не вдалося відкрити дану сторінку. Можливо немає з\'єднання із мережею. Перевірте з\'єднання та спробуйте ще раз.</string>
+    <string name="error_empty_title">Ілюстрація: patrioty.org.ua</string>
+    <string name="error_favorite_list_empty">Список улюблених сторінок порожній. Щоб додати сторінку до улюблених написніть на піктограму зірки на ній.</string>
+    <string name="error_play_market_not_found">Play Market не знайдено</string>
+    <string name="error_find_news">Не вдалося знайти новини</string>
+    <string name="error_internet">Немає з\'єднання із мережею</string>
+    <string name="error_apps_not_found">Підходящих програм не знайдено</string>
+    <string name="error_search_value_is_empty">Введіть пошуковий запит</string>
+    <string name="error_share_timeout">Не вдалося завантажити сторінку. Час вийшов.</string>
+
+</resources>

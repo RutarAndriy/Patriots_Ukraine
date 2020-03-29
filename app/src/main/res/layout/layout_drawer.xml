@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logo_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:onClick="on_Menu_Item_Click"
+        app:srcCompat="@drawable/im_site_logo_menu" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/menu_news"
+                    android:clickable="true"
+                    android:onClick="on_Menu_Item_Click"
+                    android:paddingBottom="@dimen/menu_padding"
+                    android:paddingTop="@dimen/menu_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/menu_icon_size"
+                        android:layout_height="@dimen/menu_icon_size"
+                        app:srcCompat="@drawable/ic_news"
+                        android:layout_weight="0"
+                        android:layout_marginLeft="@dimen/menu_icon_margin"
+                        android:tint="?attr/color_text_light" />
+
+                    <TextView
+                        android:text="Новини"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/size_text_normal"
+                        android:layout_marginLeft="@dimen/menu_text_margin"
+                        android:textColor="?attr/color_text_light" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/menu_favorite"
+                    android:clickable="true"
+                    android:onClick="on_Menu_Item_Click"
+                    android:paddingBottom="@dimen/menu_padding"
+                    android:paddingTop="@dimen/menu_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/menu_icon_size"
+                        android:layout_height="@dimen/menu_icon_size"
+                        app:srcCompat="@drawable/ic_favorite_off"
+                        android:layout_weight="0"
+                        android:layout_marginLeft="@dimen/menu_icon_margin"
+                        android:tint="?attr/color_text_light" />
+
+                    <TextView
+                        android:text="Улюблені"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/size_text_normal"
+                        android:layout_marginLeft="@dimen/menu_text_margin"
+                        android:textColor="?attr/color_text_light" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/menu_settings"
+                    android:clickable="true"
+                    android:onClick="on_Menu_Item_Click"
+                    android:paddingBottom="@dimen/menu_padding"
+                    android:paddingTop="@dimen/menu_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/menu_icon_size"
+                        android:layout_height="@dimen/menu_icon_size"
+                        app:srcCompat="@drawable/ic_settings"
+                        android:layout_weight="0"
+                        android:layout_marginLeft="@dimen/menu_icon_margin"
+                        android:tint="?attr/color_text_light" />
+
+                    <TextView
+                        android:text="Налаштування"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/size_text_normal"
+                        android:layout_marginLeft="@dimen/menu_text_margin"
+                        android:textColor="?attr/color_text_light" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/menu_about"
+                    android:clickable="true"
+                    android:onClick="on_Menu_Item_Click"
+                    android:paddingBottom="@dimen/menu_padding"
+                    android:paddingTop="@dimen/menu_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/menu_icon_size"
+                        android:layout_height="@dimen/menu_icon_size"
+                        app:srcCompat="@drawable/ic_about"
+                        android:layout_weight="0"
+                        android:layout_marginLeft="@dimen/menu_icon_margin"
+                        android:tint="?attr/color_text_light" />
+
+                    <TextView
+                        android:text="Про програму"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/size_text_normal"
+                        android:layout_marginLeft="@dimen/menu_text_margin"
+                        android:textColor="?attr/color_text_light" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/menu_exit"
+                    android:clickable="true"
+                    android:onClick="on_Menu_Item_Click"
+                    android:paddingBottom="@dimen/menu_padding"
+                    android:paddingTop="@dimen/menu_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/menu_icon_size"
+                        android:layout_height="@dimen/menu_icon_size"
+                        app:srcCompat="@drawable/ic_exit"
+                        android:layout_weight="0"
+                        android:layout_marginLeft="@dimen/menu_icon_margin"
+                        android:tint="?attr/color_text_light" />
+
+                    <TextView
+                        android:text="Вихід"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/size_text_normal"
+                        android:layout_marginLeft="@dimen/menu_text_margin"
+                        android:textColor="?attr/color_text_light" />
+                </LinearLayout>
+
+<!--    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/progress_wheel"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+
+        wheel:matProg_barColor="?attr/colorPrimary"
+        wheel:matProg_barWidth="20dp"
+        wheel:matProg_progressIndeterminate="true"
+        wheel:matProg_fillRadius="true"
+        android:layout_gravity="center" />-->
+
+</LinearLayout>

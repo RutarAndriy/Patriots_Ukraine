@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <resources>
 
-    <attr name="logo" format="reference" />                                         <!-- Тризуб -->
-    <attr name="menu_logo" format="reference" />                             <!-- Логотип сайту -->
+    <attr name="color_link" format="color" />                               <!-- Колір посилань -->
 
-    <attr name="link_color" format="color" />                               <!-- Колір посилань -->
-    <attr name="text_color_1" format="color" />                    <!-- Колір тексту заголовків -->
-    <attr name="text_color_2" format="color" />                          <!-- Колір тексту меню -->
-    <attr name="list_item_color_1" format="color" />                  <!-- 1 колір списку новин -->
-    <attr name="list_item_color_2" format="color" />                  <!-- 2 колір списку новин -->
-    <attr name="time_bar_background" format="color" />             <!-- Колір блоку часу і дати -->
-    <attr name="title_bar_background" format="color" />                   <!-- Колір заголовків -->
+    <attr name="color_text_dark" format="color" />                <!-- Темний колір для текстів -->
+    <attr name="color_text_light" format="color" />              <!-- Світлий колір для текстів -->
+
+    <attr name="color_list_item_dark" format="color" />          <!-- Темний колір списку новин -->
+    <attr name="color_list_item_light" format="color" />        <!-- Світлий колір списку новин -->
+
+    <attr name="color_background" format="color" />            <!-- Фоновий колір усіх сторінок -->
+    <attr name="color_trident_in" format="color" />                    <!-- Колір Гербу України -->
+    <attr name="color_trident_out" format="color" />                   <!-- Колір Гербу України -->
+
+    <attr name="color_outline" format="color" />                           <!-- Колір обведення -->
+    <attr name="color_theme_text" format="color" />               <!-- Колір кольорових текстів -->
+
+    <attr name="color_behavior_in" format="color" />           <!-- Внутрішній колір behavior'а -->
+    <attr name="color_behavior_out" format="color" />           <!-- Зовнішній колір behavior'а -->
+    <attr name="color_behavior_text" format="color" /> <!-- Колір підписів всередині behavior'а -->
+
+    <attr name="scrollbar" format="reference" />                                  <!-- Скролбар -->
+    <attr name="search_run" format="reference" />                    <!-- Анімація пошуку новин -->
+    <attr name="share_loading" format="reference" />            <!-- Анімація публікації новини -->
 
 </resources>
