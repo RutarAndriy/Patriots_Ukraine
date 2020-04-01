@@ -211,9 +211,6 @@ vars.circle_background.setColor(vars.color_primary_dark);
 
 vars.lp_web = vars.web_view.getLayoutParams();
 
-vars.app_debug_mode = true;
-if (vars.app_debug_mode) { app.findViewById(R.id.debug_view).setVisibility(View.VISIBLE); }
-
 // ................................................................................................
 
 try {
