@@ -42,7 +42,6 @@ public class Item_Listener {
                         Dialog.dismiss_Dialog();
                         Utility.set_Toolbar_Title();
                         vars.swipe_refresh.setEnabled(true);
-                        Utility.draw_Debug();
 
                         //if (vars.show_logo_layout) {
                         //    Utility.start_Anim(vars.logo_app, R.anim.press_logo);

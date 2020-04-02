@@ -2,7 +2,7 @@
 <resources>
 
     <!-- Дані про програму -->
-    <string name="app_name">Патріоти Ukraine Tests</string>
+    <string name="app_name">Патріоти Ukraine</string>
     <string name="app_site">www.patrioty.org.ua</string>
     <string name="app_version">версія %1$s</string>
 

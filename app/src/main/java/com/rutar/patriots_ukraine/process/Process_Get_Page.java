@@ -92,8 +92,6 @@ else { vars.can_be_favorite = true;
        vars.web_view.clearCache(true);
        vars.web_view.loadDataWithBaseURL(page_dir, vars.html, null, null, null); }
 
-Utility.draw_Debug();
-
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////

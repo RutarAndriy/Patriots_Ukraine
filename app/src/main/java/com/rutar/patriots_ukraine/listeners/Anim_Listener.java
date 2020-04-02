@@ -209,7 +209,6 @@ if (id == R.id.toolbar_icon_left &&
     if      (vars.app_state == 1.2f) { vars.app_state = 1.1f; }
     else if (vars.app_state == 2.2f) { vars.app_state = 2.1f; }
     else if (vars.app_state == 3.1f) { vars.app_state = 3.0f; }
-    Utility.draw_Debug();
 
     vars.swipe_refresh.setVisibility(View.VISIBLE);
     Utility.start_Anim(vars.swipe_refresh, vars.refresh_anim_show);

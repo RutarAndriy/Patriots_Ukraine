@@ -12,11 +12,11 @@ import static com.rutar.patriots_ukraine.Patriots_Ukraine.vars;
 // ................................................................................................
 // Sources by Bassel Mourjan
 
-public class Custom_Context_Wrapper extends ContextWrapper {
+public class Context_Wrapper extends ContextWrapper {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-public Custom_Context_Wrapper (Context base) { super(base); }
+public Context_Wrapper(Context base) { super(base); }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -59,7 +59,7 @@ else
 
 // ................................................................................................
 
-return new Custom_Context_Wrapper(context);
+return new Context_Wrapper(context);
 
 }
 

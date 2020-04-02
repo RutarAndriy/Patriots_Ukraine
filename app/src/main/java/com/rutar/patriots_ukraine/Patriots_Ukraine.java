@@ -19,7 +19,7 @@ import com.rutar.patriots_ukraine.listeners.Item_Listener;
 import com.rutar.patriots_ukraine.listeners.Menu_Item_Listener;
 import com.rutar.patriots_ukraine.listeners.Settings_Item_Listener;
 import com.rutar.patriots_ukraine.listeners.Toolbar_Item_Listener;
-import com.rutar.patriots_ukraine.utils.Custom_Context_Wrapper;
+import com.rutar.patriots_ukraine.utils.Context_Wrapper;
 import com.rutar.patriots_ukraine.other.News_Item;
 import com.rutar.patriots_ukraine.custom_views.Dialog;
 
@@ -75,25 +75,6 @@ static { AppCompatDelegate.setCompatVectorFromResourcesEnabled(true); }
 // Налаштування при ландшафтній орієнтації
 // Відсортовано за зростанням/спаданням
 
-/*
-
-"1.0 - Startup state",
-"1.1 - Startup state -> News List",
-"1.2 - Startup state -> News List -> WebView",
-
-"2.0 - Search state",
-"2.1 - Search state -> Search List",
-"2.2 - Search state -> Search List -> WebView",
-
-"3.0 - Favorite state",
-"3.1 - Favorite state -> WebView",
-
-"4.0 - Settings state",
-
-"5.0 - About state"
-
-*/
-
 private float сoef;
 private Resources res;
 private Configuration configuration;
@@ -144,7 +125,7 @@ Dialog.init_Dialog(this);
 
 @Override
 protected void attachBaseContext (Context context) {
-    super.attachBaseContext(Custom_Context_Wrapper.wrap(context));
+    super.attachBaseContext(Context_Wrapper.wrap(context));
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -178,12 +159,12 @@ vars.pref_settings.getInt("app_news_list_index", 0);
 vars.last_news_list_position =
 vars.pref_settings.getInt("app_news_list_position", 0);
 
-//if (app.current_orientation == 0)
-//    { app.news_list.setSelectionFromTop(Settings.last_news_list_index,
-//                                        Settings.last_news_list_position); }
+/*if (app.current_orientation == 0)
+    { app.news_list.setSelectionFromTop(Settings.last_news_list_index,
+                                        Settings.last_news_list_position); }
 
-//else { app.news_list.setSelectionFromTop((Settings.last_news_list_index / 2),
-//                                          Settings.last_news_list_position); }
+else { app.news_list.setSelectionFromTop((Settings.last_news_list_index / 2),
+                                          Settings.last_news_list_position); }*/
 
 // ................................................................................................
 
@@ -213,31 +194,31 @@ vars.theme_now = 1;
 
 switch (vars.theme_now) {
 
-case 1:  setTheme(R.style.Theme_Default_Light);    break;
-case 2:  setTheme(R.style.Theme_Default_Dark);    break;
+case 1:  setTheme(R.style.Theme_Default_Light); break;
+case 2:  setTheme(R.style.Theme_Default_Dark);  break;
 
-case 3:  setTheme(R.style.Theme_Red_Light);    break;
-case 4:  setTheme(R.style.Theme_Red_Dark); break;
+case 3:  setTheme(R.style.Theme_Red_Light);     break;
+case 4:  setTheme(R.style.Theme_Red_Dark);      break;
 case 5:  setTheme(R.style.Theme_Orange_Light);  break;
 case 6:  setTheme(R.style.Theme_Orange_Dark);   break;
-case 7:  setTheme(R.style.Theme_Yellow_Light);   break;
-case 8:  setTheme(R.style.Theme_Yellow_Dark); break;
-case 9:  setTheme(R.style.Theme_Lime_Light); break;
-case 10: setTheme(R.style.Theme_Lime_Dark);  break;
-case 11: setTheme(R.style.Theme_Green_Light); break;
+case 7:  setTheme(R.style.Theme_Yellow_Light);  break;
+case 8:  setTheme(R.style.Theme_Yellow_Dark);   break;
+case 9:  setTheme(R.style.Theme_Lime_Light);    break;
+case 10: setTheme(R.style.Theme_Lime_Dark);     break;
+case 11: setTheme(R.style.Theme_Green_Light);   break;
 case 12: setTheme(R.style.Theme_Green_Dark);    break;
-case 13: setTheme(R.style.Theme_Teal_Light); break;
-case 14: setTheme(R.style.Theme_Teal_Dark);  break;
-case 15: setTheme(R.style.Theme_Blue_Light);   break;
-case 16: setTheme(R.style.Theme_Blue_Dark);   break;
-case 17: setTheme(R.style.Theme_Indigo_Light); break;
-case 18: setTheme(R.style.Theme_Indigo_Dark); break;
+case 13: setTheme(R.style.Theme_Teal_Light);    break;
+case 14: setTheme(R.style.Theme_Teal_Dark);     break;
+case 15: setTheme(R.style.Theme_Blue_Light);    break;
+case 16: setTheme(R.style.Theme_Blue_Dark);     break;
+case 17: setTheme(R.style.Theme_Indigo_Light);  break;
+case 18: setTheme(R.style.Theme_Indigo_Dark);   break;
 case 19: setTheme(R.style.Theme_Violet_Light);  break;
-case 20: setTheme(R.style.Theme_Violet_Dark); break;
-case 21: setTheme(R.style.Theme_Grey_Light);  break;
-case 22: setTheme(R.style.Theme_Gray_Dark); break;
-case 23: setTheme(R.style.Theme_Black_Light);  break;
-case 24: setTheme(R.style.Theme_Black_Dark); break;
+case 20: setTheme(R.style.Theme_Violet_Dark);   break;
+case 21: setTheme(R.style.Theme_Grey_Light);    break;
+case 22: setTheme(R.style.Theme_Gray_Dark);     break;
+case 23: setTheme(R.style.Theme_Black_Light);   break;
+case 24: setTheme(R.style.Theme_Black_Dark);    break;
 
 }
 }

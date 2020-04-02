@@ -72,15 +72,6 @@ private static DateFormat date_format = new SimpleDateFormat("dd-MM-yyyy-hh:mm")
 
 private static int snackbar_show_time = 2500;
 
-private static final String[] app_states = new String[]
-    {
-        "Startup State",  "Startup State > News List",  "Startup State > News List > WebView",
-        "Search State",   "Search State > Search List", "Search State > Search List > WebView",
-        "Favorite State", "Favorite State > WebView",
-        "Settings state",
-        "About state"
-    };
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // Перехід на сайт за посиланням
 
@@ -212,9 +203,6 @@ case R.id.menu_about:    vars.menu_about    .setBackgroundColor(vars.color_prima
 case R.id.menu_exit:     vars.menu_exit     .setBackgroundColor(vars.color_primary); break;
 
 }
-
-Utility.draw_Debug();
-
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -229,7 +217,6 @@ final String search_world = vars.search_text_field.getText().toString();
 final String search_text = Utility.get_String(R.string.search_word, search_world);
 
 vars.search_text = search_world;
-Utility.draw_Debug();
 
 Handler handler = new Handler();
 handler.postDelayed(new Runnable() {
@@ -1070,9 +1057,6 @@ switch (String.valueOf(vars.app_state)) {
              break;
 
 }
-
-draw_Debug();
-
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1281,42 +1265,6 @@ public static void print_Stack_Trace (String title, Exception e) {
 
     for (int z = 0; z < stack_Trace.length; z++) { Log.e(vars.TAG, "caused by: " + stack_Trace[z]); }
 
-}
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-
-public static void draw_Debug() {
-
-TextView app_state = app.findViewById(R.id.debug_text_01);
-
-String state = get_App_State_Description();
-app_state.setText("App state: " + state);
-
-}
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-
-private static String get_App_State_Description() {
-
-switch (String.valueOf(vars.app_state)) {
-
-case "1.0": return app_states[0];
-case "1.1": return app_states[1];
-case "1.2": return app_states[2];
-
-case "2.0": return app_states[3];
-case "2.1": return app_states[4];
-case "2.2": return app_states[5];
-
-case "3.0": return app_states[6];
-case "3.1": return app_states[7];
-
-case "4.0": return app_states[8];
-case "5.0": return app_states[9];
-
-default: return "Wrong app state";
-
-}
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////

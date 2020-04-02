@@ -24,7 +24,7 @@ import android.widget.TextView;
 import com.rutar.patriots_ukraine.custom_views.Dialog;
 import com.rutar.patriots_ukraine.custom_views.Web_View;
 import com.rutar.patriots_ukraine.listeners.View_Listener;
-import com.rutar.patriots_ukraine.utils.FPS_View;
+import com.rutar.patriots_ukraine.utils.Debug_View;
 import com.rutar.patriots_ukraine.utils.Utility;
 
 import java.util.Calendar;
@@ -89,8 +89,6 @@ Dialog.tmp_date[0] = vars.date[0];
 Dialog.tmp_date[1] = vars.date[1];
 Dialog.tmp_date[2] = vars.date[2];
 
-Utility.draw_Debug();
-
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -125,8 +123,6 @@ vars.layout_settings.addOnLayoutChangeListener(new View.OnLayoutChangeListener()
 
     }
 });
-
-((CoordinatorLayout)vars.layout_displayable).addView(new FPS_View(app));
 
 vars.error_list = app.findViewById(R.id.favorite_list_empty);
 vars.error_page = app.findViewById(R.id.web_view_error);
@@ -229,6 +225,9 @@ catch (Exception e) { vars.version_name = "1.0"; }
 
 ((TextView)app.findViewById(R.id.version_view)).setText(Utility
               .get_String(R.string.app_version, vars.version_name));
+
+// Додавання циклу оновлення Debug інформації
+((CoordinatorLayout) vars.layout_displayable).addView(new Debug_View(app));
 
 // ................................................................................................
 
