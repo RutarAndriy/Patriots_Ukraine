@@ -1,5 +1,6 @@
 package com.rutar.patriots_ukraine;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
@@ -61,7 +62,7 @@ static { AppCompatDelegate.setCompatVectorFromResourcesEnabled(true); }
 // Правильна обробка повороту екрану
 // 25 квітня 1995 року -> 25.04.1995
 
-// Забрати блокування програми при анімації +
+// Забрати блокування програми при анімації
 // Переробити appState - кожен стан програми тепер є окремим +
 // Зробити налаштування дієвими
 // Ввести час простою (timeout) для завантаження ресурсів
@@ -100,12 +101,9 @@ private Configuration configuration;
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // Створення нового Activity
 
+@SuppressLint("SourceLockedOrientationActivity")
 @Override
 protected void onCreate (Bundle bundle) {
-
-long create_time = System.currentTimeMillis();
-
-// ................................................................................................
 
 app = this;
 
@@ -138,11 +136,6 @@ setContentView(R.layout.layout_main);
 
 Initialization.init(this);
 Dialog.init_Dialog(this);
-
-// ................................................................................................
-
-create_time = System.currentTimeMillis() - create_time;
-Log.i(Variables.TAG, "Activity was created in " + create_time + " ms.");
 
 }
 
