@@ -30,7 +30,7 @@ vars.swipe_refresh.setRefreshing(true);
 vars.behavior_web.setState(BottomSheetBehavior.STATE_HIDDEN);
 vars.behavior_list.setState(BottomSheetBehavior.STATE_HIDDEN);
 
-Utility.show_Snackbar(Utility.get_String(R.string.progress_get_page), true);
+Utility.show_Snack_Bar(Utility.get_String(R.string.progress_get_page), true);
 
 Handler handler = new Handler();
 handler.postDelayed(new Runnable() {

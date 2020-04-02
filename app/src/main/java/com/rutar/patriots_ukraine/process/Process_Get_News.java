@@ -61,8 +61,8 @@ vars.news_list.setAdapter(vars.news_adapter);
 vars.swipe_refresh.setRefreshing(false);
 vars.news_list.setVisibility(View.VISIBLE);
 
-if (Utility.is_Online(app)) { Utility.show_Snackbar(Utility.get_String(R.string.error_get_news), false); }
-else                        { Utility.show_Snackbar(Utility.get_String(R.string.error_internet), false); }
+if (Utility.is_Online(app)) { Utility.show_Snack_Bar(Utility.get_String(R.string.error_get_news), false); }
+else                        { Utility.show_Snack_Bar(Utility.get_String(R.string.error_internet), false); }
 
 new Handler().postDelayed(new Runnable() {
     @Override

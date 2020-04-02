@@ -70,7 +70,7 @@ private static DateFormat date_format = new SimpleDateFormat("dd-MM-yyyy-hh:mm")
 
 // ................................................................................................
 
-private static int snackbar_show_time;
+private static int snackbar_show_time = 2500;
 
 private static final String[] app_states = new String[]
     {
@@ -116,7 +116,7 @@ if (!res_info.isEmpty()) {
 
 // Якщо відповідних програм немає - показуємо повідомлення про помилку
 if (Dialog.extra_intents.isEmpty()) { vars.behavior_web.setState(BottomSheetBehavior.STATE_HIDDEN);
-                                      Utility.show_Snackbar(Utility.get_String(R.string.error_apps_not_found), false); }
+                                      Utility.show_Snack_Bar(Utility.get_String(R.string.error_apps_not_found), false); }
 
 // В іншому випадку показуємо діалогове вікно вибору програми
 else { vars.dialog_index = Dialog.Dialog_Open_With;
@@ -240,7 +240,7 @@ handler.postDelayed(new Runnable() {
         vars.behavior_web.setState(BottomSheetBehavior.STATE_HIDDEN);
         vars.behavior_list.setState(BottomSheetBehavior.STATE_HIDDEN);
 
-        Utility.show_Snackbar(search_text, true);
+        Utility.show_Snack_Bar(search_text, true);
         new Process_Find_News().execute(search_world);
 
     }
@@ -607,14 +607,12 @@ return bitmap;
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-// Показати snackbar
+// Показати snack_bar
 
-public static void show_Snackbar (final String text, boolean indefinite) {
+public static void show_Snack_Bar (final String text, boolean indefinite) {
 
-TextView text_view = app.findViewById(R.id.snackbar_text);
-
-text_view.setText(text);
-vars.behavior_snackbar.setState(BottomSheetBehavior.STATE_COLLAPSED);
+vars.behavior_snack_bar_text.setText(text);
+vars.behavior_snack_bar.setState(BottomSheetBehavior.STATE_COLLAPSED);
 
 if (indefinite) { return; }
 
@@ -622,26 +620,25 @@ Handler handler = new Handler();
 handler.postDelayed(new Runnable() {
 
     @Override
-    public void run() { snackbar_show_time = 2500;
-                        Utility.dismiss_Snackbar(); }
+    public void run() { Utility.dismiss_Snack_Bar(); }
 
 }, snackbar_show_time);
 
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-// Сховати snackbar
+// Сховати snack_bar
 
-public static void dismiss_Snackbar() {
+public static void dismiss_Snack_Bar() {
 
-    vars.behavior_snackbar.setState(BottomSheetBehavior.STATE_HIDDEN);
+vars.behavior_snack_bar.setState(BottomSheetBehavior.STATE_HIDDEN);
 
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-// Сховати snackbar
+// Задати час відображення snack_bar'у
 
-public static void set_Snackbar_Show_Time (int time) {
+public static void set_Snack_Bar_Show_Time (int time) {
 
 if (time > 0 && time < 10000) { snackbar_show_time = time; }
 else                          { snackbar_show_time = 2500; }

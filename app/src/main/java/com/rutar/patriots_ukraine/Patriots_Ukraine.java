@@ -20,9 +20,7 @@ import com.rutar.patriots_ukraine.listeners.Menu_Item_Listener;
 import com.rutar.patriots_ukraine.listeners.Settings_Item_Listener;
 import com.rutar.patriots_ukraine.listeners.Toolbar_Item_Listener;
 import com.rutar.patriots_ukraine.utils.Custom_Context_Wrapper;
-import com.rutar.patriots_ukraine.utils.Utility;
 import com.rutar.patriots_ukraine.other.News_Item;
-import com.rutar.patriots_ukraine.listeners.View_Listener;
 import com.rutar.patriots_ukraine.custom_views.Dialog;
 
 import java.io.File;
@@ -355,7 +353,7 @@ if (vars.back_pressed + 1500 > System.currentTimeMillis())
 
 // Відображаємо повідомлення про вихід із програми
 else { vars.back_pressed = System.currentTimeMillis();
-       show_Snackbar(get_String(R.string.exit_message), false); }
+       show_Snack_Bar(get_String(R.string.exit_message), false); }
 
 }
 

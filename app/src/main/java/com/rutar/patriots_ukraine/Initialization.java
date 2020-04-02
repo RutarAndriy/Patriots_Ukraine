@@ -148,12 +148,14 @@ vars.behavior_web = BottomSheetBehavior.from((FrameLayout)
 vars.behavior_list = BottomSheetBehavior.from((FrameLayout)
                     app.findViewById(R.id.bottom_sheet_list));
 
-vars.behavior_snackbar = BottomSheetBehavior.from((FrameLayout)
+vars.behavior_snack_bar = BottomSheetBehavior.from((FrameLayout)
                         app.findViewById(R.id.bottom_sheet_snackbar));
+
+vars.behavior_snack_bar_text = app.findViewById(R.id.snackbar_text);
 
 vars.behavior_web.setState(BottomSheetBehavior.STATE_HIDDEN);
 vars.behavior_list.setState(BottomSheetBehavior.STATE_HIDDEN);
-vars.behavior_snackbar.setState(BottomSheetBehavior.STATE_HIDDEN);
+vars.behavior_snack_bar.setState(BottomSheetBehavior.STATE_HIDDEN);
 
 vars.behavior_web.setBottomSheetCallback(View_Listener.behavior_listener);
 vars.behavior_list.setBottomSheetCallback(View_Listener.behavior_listener);

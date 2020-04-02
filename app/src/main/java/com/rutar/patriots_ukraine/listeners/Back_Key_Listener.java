@@ -38,57 +38,55 @@ else { Toolbar_Item_Listener.on_Toolbar_Item_Click(app
 
 // ................................................................................................
 // Сторінка новин закрита
-        else {
+else {
 
-// ................................................................................................
 // Якщо відкрите бокове меню, то закриваємо його
-            if (vars.drawer.isDrawerOpen(GravityCompat.START))
-            { vars.drawer.closeDrawer(GravityCompat.START); }
+if (vars.drawer.isDrawerOpen(GravityCompat.START))
+    { vars.drawer.closeDrawer(GravityCompat.START); }
 
-// ................................................................................................
 // Відображається вікно пошуку новин
-            else if (vars.app_state == 2.0f)
-            { Toolbar_Item_Listener.on_Toolbar_Item_Click(app.findViewById(R.id.toolbar_icon_right), app); }
+else if (vars.app_state == 2.0f)
+    { Toolbar_Item_Listener.on_Toolbar_Item_Click(app
+                           .findViewById(R.id.toolbar_icon_right), app); }
 
-// ................................................................................................
 // Відображається список шуканих новин
-            else if (vars.app_state == 2.1f)
-            { Toolbar_Item_Listener.on_Toolbar_Item_Click(app.findViewById(R.id.toolbar_text), app); }
+else if (vars.app_state == 2.1f)
+    { Toolbar_Item_Listener.on_Toolbar_Item_Click(app.findViewById(R.id.toolbar_text), app); }
 
 // Налаштування -> Головне меню
-            else if (vars.app_state == 4.0f) {
+else if (vars.app_state == 4.0f) {
 
-                Utility.get_App_State_By_Data();
-                vars.layout_displayable.setVisibility(View.VISIBLE);
-                Utility.start_Anim(vars.layout_settings, vars.refresh_anim_hide);
-                Utility.set_Menu_Selected(R.id.menu_news);
-                Utility.toolbar_Views_Hide();
+    Utility.get_App_State_By_Data();
+    vars.layout_displayable.setVisibility(View.VISIBLE);
+    Utility.start_Anim(vars.layout_settings, vars.refresh_anim_hide);
+    Utility.set_Menu_Selected(R.id.menu_news);
+    Utility.toolbar_Views_Hide();
 
-            }
+}
 
 // Про програму -> Головне меню
-            else if (vars.app_state == 5.0f) {
+else if (vars.app_state == 5.0f) {
 
-                Utility.get_App_State_By_Data();
-                vars.layout_displayable.setVisibility(View.VISIBLE);
-                Utility.start_Anim(vars.layout_about, vars.refresh_anim_hide);
-                Utility.set_Menu_Selected(R.id.menu_news);
-                Utility.toolbar_Views_Hide();
+    Utility.get_App_State_By_Data();
+    vars.layout_displayable.setVisibility(View.VISIBLE);
+    Utility.start_Anim(vars.layout_about, vars.refresh_anim_hide);
+    Utility.set_Menu_Selected(R.id.menu_news);
+    Utility.toolbar_Views_Hide();
 
-            }
+}
 
 // Улюблені -> Головне меню
-            else if (vars.app_state == 5) {
+else if (vars.app_state == 3.0f) {
 
-                Utility.get_App_State_By_Data();
-                //Utility.start_Anim(vars.layout_logo, vars.refresh_anim_show);
-                Utility.set_Menu_Selected(R.id.menu_news);
-                Utility.toolbar_Views_Hide();
+Utility.get_App_State_By_Data();
+//Utility.start_Anim(vars.layout_logo, vars.refresh_anim_show);
+Utility.set_Menu_Selected(R.id.menu_news);
+Utility.toolbar_Views_Hide();
 
-                //vars.layout_logo.setVisibility(View.VISIBLE);
-                //vars.show_logo_layout = true;
+//vars.layout_logo.setVisibility(View.VISIBLE);
+//vars.show_logo_layout = true;
 
-            }
+}
 
 // Список новин -> Головне меню
 /*else if (vars.app_state == 1 && !vars.show_logo_layout) {
@@ -110,19 +108,14 @@ else { Toolbar_Item_Listener.on_Toolbar_Item_Click(app
 }*/
 
 // Виходимо кнопкою "Назад"
-            else {
+else { app.exit_App(); }
 
-                app.exit_App();
-/*                if (vars.back_pressed + 1500 > System.currentTimeMillis()) { app.exit_App(); }
+}
 
-                else { vars.back_pressed = System.currentTimeMillis();
-                    Utility.show_Snackbar(Utility.get_String(R.string.exit_message), false); }*/
+//vars.behavior_list.setState(BottomSheetBehavior.STATE_HIDDEN);
 
-            }
-        }
+}
 
-        vars.behavior_list.setState(BottomSheetBehavior.STATE_HIDDEN);
-
-    }
+// Кінець класу <Back_Key_Listener> ///////////////////////////////////////////////////////////////
 
 }

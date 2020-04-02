@@ -65,7 +65,7 @@ public boolean shouldOverrideUrlLoading (WebView view, final String url) {
 // Facebook опублікував новину
 if (url.contains("facebook.com/dialog/close_window")) {
 
-    Utility.show_Snackbar("Facebook is share", false);
+    Utility.show_Snack_Bar("Facebook is share", false);
     Dialog.dismiss_Dialog();
     return false; }
 
@@ -89,7 +89,7 @@ Log.e(TAG, "" + url);
 if (url.contains("api.twitter.com") &&
     url.contains("statuses/update.json")) {
 
-Utility.show_Snackbar("Twitter is share", false);
+Utility.show_Snack_Bar("Twitter is share", false);
 Dialog.dismiss_Dialog(); }
 
 super.onLoadResource(view, url);
@@ -121,7 +121,7 @@ public void run() {
 if (timeout) {
 
 Dialog.dismiss_Dialog();
-Utility.show_Snackbar(Utility.get_String(R.string.error_share_timeout), false);
+Utility.show_Snack_Bar(Utility.get_String(R.string.error_share_timeout), false);
 
 }
 }

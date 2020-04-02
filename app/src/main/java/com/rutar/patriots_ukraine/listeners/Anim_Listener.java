@@ -81,7 +81,7 @@ if (id == R.id.search_layout &&
     anim == vars.refresh_anim_hide) { vars.search_text_field.setEnabled(true);
                                       vars.search_progress_bar.clearAnimation();
                                       vars.layout_search.setVisibility(View.GONE);
-                                      Utility.dismiss_Snackbar(); }
+                                      Utility.dismiss_Snack_Bar(); }
 
 // ................................................................................................
 // Відображення меню пошуку новин
@@ -104,7 +104,7 @@ if (id == R.id.news_list &&
                                       vars.news_list.setVisibility(View.VISIBLE);
                                       vars.news_list_done = true;
                                       vars.input_lock = false;
-                                      Utility.dismiss_Snackbar();
+                                      Utility.dismiss_Snack_Bar();
                                       Process_Preview.get_Instance().resume_Thread();
 
                                       // Якщо мало новин, то показуємо кнопки "next" та "prev"

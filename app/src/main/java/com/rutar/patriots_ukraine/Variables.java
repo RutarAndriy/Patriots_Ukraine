@@ -126,7 +126,9 @@ public boolean news_list_reach_end;
 public DrawerLayout drawer;
 public BottomSheetBehavior behavior_web;
 public BottomSheetBehavior behavior_list;
-public BottomSheetBehavior behavior_snackbar;
+public BottomSheetBehavior behavior_snack_bar;
+
+
 
 public SwipeRefreshLayout swipe_refresh;
 
@@ -165,6 +167,7 @@ public TextView toolbar_title;
 public ImageView toolbar_left;
 public ImageView toolbar_right;
 public EditText search_text_field;
+public TextView behavior_snack_bar_text;
 
 public GradientDrawable circle_background;
 public LinearLayoutManager recycler_layout_manager;

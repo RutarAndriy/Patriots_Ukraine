@@ -1,14 +1,11 @@
 package com.rutar.patriots_ukraine.listeners;
 
-import android.support.design.widget.BottomSheetBehavior;
 import android.support.v4.view.GravityCompat;
 import android.view.View;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import com.rutar.patriots_ukraine.Patriots_Ukraine;
 import com.rutar.patriots_ukraine.R;
-import com.rutar.patriots_ukraine.custom_views.Dialog;
 import com.rutar.patriots_ukraine.utils.Utility;
 
 import static com.rutar.patriots_ukraine.Patriots_Ukraine.vars;
@@ -41,8 +38,8 @@ switch (String.valueOf(vars.app_state)) {
 
     case "3.0": vars.AZ_sort =! vars.AZ_sort;
                 Utility.prepare_Favorite_List();
-                Utility.set_Snackbar_Show_Time(1300);
-                Utility.show_Snackbar("Відсортовано за зростанням", false);
+                Utility.set_Snack_Bar_Show_Time(1300);
+                Utility.show_Snack_Bar("Відсортовано за зростанням", false);
                 break;
 
 }

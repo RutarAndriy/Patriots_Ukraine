@@ -4,15 +4,11 @@ import android.content.Context;
 import android.os.Handler;
 import android.support.design.widget.BottomSheetBehavior;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.rutar.patriots_ukraine.Patriots_Ukraine;
 import com.rutar.patriots_ukraine.R;
-import com.rutar.patriots_ukraine.Settings;
-import com.rutar.patriots_ukraine.Variables;
 import com.rutar.patriots_ukraine.utils.Utility;
 
 import static com.rutar.patriots_ukraine.Patriots_Ukraine.*;
@@ -98,7 +94,7 @@ public void onPageFinished (WebView view, String url) {
 super.onPageFinished(view, url);
 vars.swipe_refresh.setRefreshing(false);
 vars.web_view.setVisibility(GONE);
-Utility.dismiss_Snackbar();
+Utility.dismiss_Snack_Bar();
 
 // ................................................................................................
 

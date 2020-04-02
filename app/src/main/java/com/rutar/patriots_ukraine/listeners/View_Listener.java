@@ -90,7 +90,7 @@ vars.input_lock = true;
 vars.swipe_refresh.setRefreshing(true);
 vars.behavior_list.setState(BottomSheetBehavior.STATE_HIDDEN);
 
-Utility.show_Snackbar(Utility.get_String(R.string.progress_get_news), true);
+Utility.show_Snack_Bar(Utility.get_String(R.string.progress_get_news), true);
 Utility.start_Anim(vars.news_list, vars.refresh_anim_hide);
 
 int d = vars.date[0];

@@ -86,7 +86,7 @@ public class Item_Listener {
 
                 if (vars.search_text_field.getText().toString().isEmpty()) {
 
-                    Utility.show_Snackbar(Utility.get_String(R.string.error_search_value_is_empty), false);
+                    Utility.show_Snack_Bar(Utility.get_String(R.string.error_search_value_is_empty), false);
                     return;
 
                 }
