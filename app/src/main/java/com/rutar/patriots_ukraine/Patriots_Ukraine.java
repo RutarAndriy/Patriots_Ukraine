@@ -28,6 +28,8 @@ import com.rutar.patriots_ukraine.custom_views.Dialog;
 import java.io.File;
 import java.util.ArrayList;
 
+import static com.rutar.patriots_ukraine.utils.Utility.*;
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 public class Patriots_Ukraine extends AppCompatActivity {
@@ -345,10 +347,15 @@ app_load_count > rate_load_count && is_Online(patriots)) { show_Rate_Dialog(); }
 
 //if (false) { return; }
 
-Utility.delete_Dir(vars.folder_prev);
-vars.folder_prev.mkdir();
+// Очищуємо тимчасові файли і виходимо із програми
+if (vars.back_pressed + 1500 > System.currentTimeMillis())
+    { delete_Dir(vars.folder_prev);
+      vars.folder_prev.mkdir();
+      System.exit(0); }
 
-onBackPressed();
+// Відображаємо повідомлення про вихід із програми
+else { vars.back_pressed = System.currentTimeMillis();
+       show_Snackbar(get_String(R.string.exit_message), false); }
 
 }
 

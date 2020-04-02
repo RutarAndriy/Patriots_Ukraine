@@ -4,31 +4,37 @@ import android.support.design.widget.BottomSheetBehavior;
 import android.support.v4.view.GravityCompat;
 import android.view.View;
 
-import com.rutar.patriots_ukraine.Patriots_Ukraine;
-import com.rutar.patriots_ukraine.R;
-import com.rutar.patriots_ukraine.utils.Utility;
+import com.rutar.patriots_ukraine.*;
+import com.rutar.patriots_ukraine.utils.*;
 
 import static com.rutar.patriots_ukraine.Patriots_Ukraine.vars;
 
+// ................................................................................................
+
 public class Back_Key_Listener {
 
-    public static void on_Back_Key_Click (Patriots_Ukraine app) {
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+public static void on_Back_Key_Click (Patriots_Ukraine app) {
 
 // Кнопка неактивна, якщо ввід заблоковано
-        if (vars.input_lock) { return; }
+if (vars.input_lock) { return; }
 
 // ................................................................................................
 // Відкрито сторінку новин
-        if (vars.app_state == 1.2f ||
-                vars.app_state == 2.2f ||
-                vars.app_state == 3.1f) {
+if (vars.app_state == 1.2f ||
+    vars.app_state == 2.2f ||
+    vars.app_state == 3.1f) {
 
-            if (vars.behavior_web.getState() == BottomSheetBehavior.STATE_COLLAPSED)
-            { vars.behavior_web.setState(BottomSheetBehavior.STATE_HIDDEN); }
+// Якщо відкритий behavior - закриваємо його
+if (vars.behavior_web.getState() == BottomSheetBehavior.STATE_COLLAPSED)
+    { vars.behavior_web.setState(BottomSheetBehavior.STATE_HIDDEN); }
 
-            else { Toolbar_Item_Listener.on_Toolbar_Item_Click(app.findViewById(R.id.toolbar_icon_left), app); }
+// В іншому разі - переходимо назад
+else { Toolbar_Item_Listener.on_Toolbar_Item_Click(app
+                            .findViewById(R.id.toolbar_icon_left), app); }
 
-        }
+}
 
 // ................................................................................................
 // Сторінка новин закрита
@@ -106,10 +112,11 @@ public class Back_Key_Listener {
 // Виходимо кнопкою "Назад"
             else {
 
-                if (vars.back_pressed + 1500 > System.currentTimeMillis()) { app.exit_App(); }
+                app.exit_App();
+/*                if (vars.back_pressed + 1500 > System.currentTimeMillis()) { app.exit_App(); }
 
                 else { vars.back_pressed = System.currentTimeMillis();
-                    Utility.show_Snackbar(Utility.get_String(R.string.exit_message), false); }
+                    Utility.show_Snackbar(Utility.get_String(R.string.exit_message), false); }*/
 
             }
         }
