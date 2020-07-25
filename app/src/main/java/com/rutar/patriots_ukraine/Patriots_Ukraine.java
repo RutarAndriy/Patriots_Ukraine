@@ -622,26 +622,31 @@ dialog_message = (TextView) dialog_message_view.findViewById(R.id.dialog_message
 private void disable_Certificate_Validation() {
 
 TrustManager[] trust_all_certs = new TrustManager[] {
-        new X509TrustManager() {
-            public X509Certificate[] getAcceptedIssuers() { return null; }
-            public void checkClientTrusted (X509Certificate[] certs, String authType) { }
-            public void checkServerTrusted (X509Certificate[] certs, String authType) { }
+    new X509TrustManager() {
+        public X509Certificate[] getAcceptedIssuers() { return null; }
+        public void checkClientTrusted (X509Certificate[] certs, String authType) { }
+        public void checkServerTrusted (X509Certificate[] certs, String authType)
+                                        throws CertificateException {
+            if (certs.length == 0) { throw new CertificateException("Certificates not found"); }
         }
+    }
 };
 
 // Install the all-trusting trust manager
 try { SSLContext sc = SSLContext.getInstance("SSL");
       sc.init(null, trust_all_certs, new java.security.SecureRandom());
       HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory()); }
-catch (Exception e) { }
+catch (Exception e) { Log.e(TAG, "Set default SSL socket factory error"); }
 
 // Create all-trusting host name verifier
-HostnameVerifier allHostsValid = new HostnameVerifier() {
-    public boolean verify (String hostname, SSLSession session) { return true; }
+HostnameVerifier hosts_valid_names = new HostnameVerifier() {
+    public boolean verify (String hostname, SSLSession session) {
+        return hostname.contains("patrioty.org.ua");
+    }
 };
 
 // Install the all-trusting host verifier
-HttpsURLConnection.setDefaultHostnameVerifier(allHostsValid);
+HttpsURLConnection.setDefaultHostnameVerifier(hosts_valid_names);
 
 }
 
