@@ -18,6 +18,9 @@ import com.mikepenz.materialdrawer.*;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 
+import javax.net.ssl.*;
+import java.security.cert.*;
+
 import static com.rutar.patriots_ukraine.Helper.*;
 import static com.rutar.patriots_ukraine.Utilities.*;
 
@@ -248,6 +251,8 @@ switch (settings_orientation) {
 
 super.onCreate(bundle);
 setContentView(R.layout.patriots_ukraine);
+
+disable_Certificate_Validation();
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -608,6 +613,35 @@ dialog_message_view = LayoutInflater.from(patriots).inflate(R.layout.dialog_cust
 
 dialog_title = (TextView) dialog_title_view.findViewById(R.id.dialog_title);
 dialog_message = (TextView) dialog_message_view.findViewById(R.id.dialog_message);
+
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Вимкнення перевірки сертифікатів
+
+private void disable_Certificate_Validation() {
+
+TrustManager[] trust_all_certs = new TrustManager[] {
+        new X509TrustManager() {
+            public X509Certificate[] getAcceptedIssuers() { return null; }
+            public void checkClientTrusted (X509Certificate[] certs, String authType) { }
+            public void checkServerTrusted (X509Certificate[] certs, String authType) { }
+        }
+};
+
+// Install the all-trusting trust manager
+try { SSLContext sc = SSLContext.getInstance("SSL");
+      sc.init(null, trust_all_certs, new java.security.SecureRandom());
+      HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory()); }
+catch (Exception e) { }
+
+// Create all-trusting host name verifier
+HostnameVerifier allHostsValid = new HostnameVerifier() {
+    public boolean verify (String hostname, SSLSession session) { return true; }
+};
+
+// Install the all-trusting host verifier
+HttpsURLConnection.setDefaultHostnameVerifier(allHostsValid);
 
 }
 
