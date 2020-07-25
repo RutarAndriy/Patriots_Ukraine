@@ -26,6 +26,9 @@ import com.rutar.patriots_ukraine.custom_views.Dialog;
 import java.io.File;
 import java.util.ArrayList;
 
+import javax.net.ssl.*;
+import java.security.cert.*;
+
 import static com.rutar.patriots_ukraine.utils.Utility.*;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -106,8 +109,7 @@ switch (vars.orientation) {
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 super.onCreate(bundle);
-
-
+disable_Certificate_Validation();
 
 if (!vars.status_bar) { requestWindowFeature(Window.FEATURE_NO_TITLE);
                         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
@@ -335,6 +337,35 @@ if (vars.back_pressed + 1500 > System.currentTimeMillis())
 // Відображаємо повідомлення про вихід із програми
 else { vars.back_pressed = System.currentTimeMillis();
        show_Snack_Bar(get_String(R.string.exit_message), false); }
+
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Вимкнення перевірки сертифікатів
+
+private void disable_Certificate_Validation() {
+
+TrustManager[] trust_all_certs = new TrustManager[] {
+    new X509TrustManager() {
+        public X509Certificate[] getAcceptedIssuers() { return null; }
+        public void checkClientTrusted (X509Certificate[] certs, String authType) { }
+        public void checkServerTrusted (X509Certificate[] certs, String authType) { }
+    }
+};
+
+// Install the all-trusting trust manager
+try { SSLContext sc = SSLContext.getInstance("SSL");
+sc.init(null, trust_all_certs, new java.security.SecureRandom());
+HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory()); }
+catch (Exception e) { }
+
+// Create all-trusting host name verifier
+HostnameVerifier allHostsValid = new HostnameVerifier() {
+public boolean verify (String hostname, SSLSession session) { return true; }
+};
+
+// Install the all-trusting host verifier
+HttpsURLConnection.setDefaultHostnameVerifier(allHostsValid);
 
 }
 
