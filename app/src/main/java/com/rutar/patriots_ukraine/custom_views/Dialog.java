@@ -8,9 +8,6 @@ import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Handler;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomSheetBehavior;
-import android.support.v7.app.AppCompatDialog;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,6 +20,10 @@ import android.widget.RelativeLayout;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatDialog;
+
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.prolificinteractive.materialcalendarview.*;
 import com.rutar.patriots_ukraine.Patriots_Ukraine;
 import com.rutar.patriots_ukraine.R;

@@ -1,8 +1,8 @@
 package com.rutar.patriots_ukraine.listeners;
 
 import android.os.Handler;
-import android.support.design.widget.BottomSheetBehavior;
 
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.rutar.patriots_ukraine.R;
 import com.rutar.patriots_ukraine.other.News_Item;
 import com.rutar.patriots_ukraine.process.Process_Get_Page;

@@ -1,7 +1,6 @@
 package com.rutar.patriots_ukraine.custom_views;
 
 import android.os.Handler;
-import android.support.v7.app.AppCompatDialog;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.ImageView;
@@ -9,6 +8,8 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.SeekBar;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatDialog;
 
 import com.rutar.patriots_ukraine.Patriots_Ukraine;
 import com.rutar.patriots_ukraine.R;

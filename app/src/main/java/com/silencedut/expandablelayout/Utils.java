@@ -6,7 +6,8 @@ import android.view.ViewParent;
 import android.widget.AbsListView;
 
 import android.animation.ValueAnimator;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * Created by SilenceDut on 16/8/21.

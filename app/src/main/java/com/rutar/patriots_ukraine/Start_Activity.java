@@ -2,7 +2,8 @@ package com.rutar.patriots_ukraine;
 
 import android.os.*;
 import android.content.*;
-import android.support.v7.app.*;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 // ................................................................................................
 // Activity - заставка

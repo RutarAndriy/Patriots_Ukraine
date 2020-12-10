@@ -3,11 +3,14 @@ package com.rutar.patriots_ukraine;
 import android.content.SharedPreferences;
 import android.view.*;
 import android.widget.*;
-import android.support.v4.widget.*;
-import android.support.v7.widget.*;
 import android.graphics.drawable.*;
-import android.support.design.widget.*;
 
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.rutar.patriots_ukraine.custom_views.Web_View;
 import com.rutar.patriots_ukraine.other.News_Item;
 import com.rutar.patriots_ukraine.other.Recycler_Adapter;

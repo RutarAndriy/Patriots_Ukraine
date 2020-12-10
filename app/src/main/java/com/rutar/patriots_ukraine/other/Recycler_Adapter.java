@@ -2,18 +2,18 @@ package com.rutar.patriots_ukraine.other;
 
 import java.util.*;
 
-import android.support.design.widget.BottomSheetBehavior;
 import android.util.Log;
 import android.view.*;
 import android.widget.*;
 
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.rutar.patriots_ukraine.R;
 import com.rutar.patriots_ukraine.Variables;
 import com.rutar.patriots_ukraine.listeners.List_Item_Listener;
 import com.rutar.patriots_ukraine.listeners.View_Listener;
 import com.rutar.patriots_ukraine.process.Process_Preview;
-
-import android.support.v7.widget.RecyclerView;
 
 import static com.rutar.patriots_ukraine.Patriots_Ukraine.app;
 import static com.rutar.patriots_ukraine.Patriots_Ukraine.vars;

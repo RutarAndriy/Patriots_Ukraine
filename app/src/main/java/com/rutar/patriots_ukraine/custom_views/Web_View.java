@@ -2,12 +2,12 @@ package com.rutar.patriots_ukraine.custom_views;
 
 import android.content.Context;
 import android.os.Handler;
-import android.support.design.widget.BottomSheetBehavior;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.rutar.patriots_ukraine.R;
 import com.rutar.patriots_ukraine.utils.Utility;
 

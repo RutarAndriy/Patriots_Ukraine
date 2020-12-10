@@ -1,9 +1,10 @@
 package com.rutar.patriots_ukraine.listeners;
 
-import android.support.design.widget.BottomSheetBehavior;
-import android.support.v4.view.GravityCompat;
 import android.view.View;
 
+import androidx.core.view.GravityCompat;
+
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.rutar.patriots_ukraine.*;
 import com.rutar.patriots_ukraine.utils.*;
 

@@ -1,8 +1,9 @@
 package com.rutar.patriots_ukraine.listeners;
 
-import android.support.v4.view.GravityCompat;
 import android.view.View;
 import android.widget.ImageView;
+
+import androidx.core.view.GravityCompat;
 
 import com.rutar.patriots_ukraine.Patriots_Ukraine;
 import com.rutar.patriots_ukraine.R;
