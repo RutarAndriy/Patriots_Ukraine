@@ -20,7 +20,7 @@
             android:layout_height="@dimen/image_prev_w"
             android:layout_gravity="center_vertical|center_horizontal"
             android:adjustViewBounds="true"
-            android:tint="?attr/colorPrimary"
+            app:tint="?attr/colorPrimary"
             android:visibility="gone"
             app:srcCompat="@drawable/ic_menu" />
 

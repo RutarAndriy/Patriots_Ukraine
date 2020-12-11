@@ -34,7 +34,7 @@
             android:clickable="true"
             android:onClick="on_Toolbar_Item_Click"
             android:padding="@dimen/value_large"
-            android:tint="?attr/color_text_light"
+            app:tint="?attr/color_text_light"
             app:srcCompat="@drawable/ic_menu" />
 
         <ImageView
@@ -45,7 +45,7 @@
             android:clickable="true"
             android:onClick="on_Toolbar_Item_Click"
             android:padding="@dimen/value_large"
-            android:tint="?attr/color_text_light"
+            app:tint="?attr/color_text_light"
             app:srcCompat="@drawable/ic_search" />
     </FrameLayout>
 

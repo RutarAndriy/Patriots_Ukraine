@@ -48,7 +48,7 @@
             android:paddingLeft="@dimen/value_normal"
             android:paddingRight="@dimen/value_small"
             android:paddingTop="@dimen/value_large"
-            android:tint="?attr/color_behavior_text"
+            app:tint="?attr/color_behavior_text"
             app:srcCompat="@drawable/ic_news_next" />
 
         <TextView
@@ -96,7 +96,7 @@
             android:paddingLeft="@dimen/value_small"
             android:paddingRight="@dimen/value_normal"
             android:paddingTop="@dimen/value_large"
-            android:tint="?attr/color_behavior_text"
+            app:tint="?attr/color_behavior_text"
             app:srcCompat="@drawable/ic_news_previous" />
 
     </LinearLayout>

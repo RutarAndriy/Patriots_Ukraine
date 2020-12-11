@@ -33,7 +33,7 @@
                         app:srcCompat="@drawable/ic_news"
                         android:layout_weight="0"
                         android:layout_marginLeft="@dimen/menu_icon_margin"
-                        android:tint="?attr/color_text_light" />
+                        app:tint="?attr/color_text_light" />
 
                     <TextView
                         android:text="Новини"
@@ -63,7 +63,7 @@
                         app:srcCompat="@drawable/ic_favorite_off"
                         android:layout_weight="0"
                         android:layout_marginLeft="@dimen/menu_icon_margin"
-                        android:tint="?attr/color_text_light" />
+                        app:tint="?attr/color_text_light" />
 
                     <TextView
                         android:text="Улюблені"
@@ -93,7 +93,7 @@
                         app:srcCompat="@drawable/ic_settings"
                         android:layout_weight="0"
                         android:layout_marginLeft="@dimen/menu_icon_margin"
-                        android:tint="?attr/color_text_light" />
+                        app:tint="?attr/color_text_light" />
 
                     <TextView
                         android:text="Налаштування"
@@ -123,7 +123,7 @@
                         app:srcCompat="@drawable/ic_about"
                         android:layout_weight="0"
                         android:layout_marginLeft="@dimen/menu_icon_margin"
-                        android:tint="?attr/color_text_light" />
+                        app:tint="?attr/color_text_light" />
 
                     <TextView
                         android:text="Про програму"
@@ -153,7 +153,7 @@
                         app:srcCompat="@drawable/ic_exit"
                         android:layout_weight="0"
                         android:layout_marginLeft="@dimen/menu_icon_margin"
-                        android:tint="?attr/color_text_light" />
+                        app:tint="?attr/color_text_light" />
 
                     <TextView
                         android:text="Вихід"

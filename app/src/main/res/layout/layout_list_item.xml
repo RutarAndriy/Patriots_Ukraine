@@ -30,7 +30,7 @@
             android:background="?attr/colorPrimary"
             android:text="@android:string/untitled"
             android:textColor="?attr/color_text_light"
-            android:textSize="@dimen/size_text_small"></TextView>
+            android:textSize="@dimen/size_text_small" />
 
         <TextView
             android:id="@+id/list_item_title"
@@ -39,7 +39,7 @@
             android:layout_marginBottom="@dimen/value_small"
             android:text="@android:string/unknownName"
             android:textColor="?attr/color_text_dark"
-            android:textSize="@dimen/size_text_large"></TextView>
+            android:textSize="@dimen/size_text_large" />
 
     </LinearLayout>
 

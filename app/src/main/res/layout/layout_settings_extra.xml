@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <android.support.v7.widget.AppCompatCheckBox
+    <androidx.appcompat.widget.AppCompatCheckBox
         android:id="@+id/show_preview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,7 +15,7 @@
         android:textSize="@dimen/size_text_normal"
         app:buttonTint="?attr/color_text_dark"/>
 
-    <android.support.v7.widget.AppCompatCheckBox
+    <androidx.appcompat.widget.AppCompatCheckBox
         android:id="@+id/extendable_date"
         android:layout_below="@id/show_preview"
         android:layout_width="wrap_content"
@@ -25,7 +25,7 @@
         android:textSize="@dimen/size_text_normal"
         app:buttonTint="?attr/color_text_dark"/>
 
-    <android.support.v7.widget.AppCompatCheckBox
+    <androidx.appcompat.widget.AppCompatCheckBox
         android:id="@+id/show_next_prev"
         android:layout_below="@id/extendable_date"
         android:layout_width="wrap_content"
@@ -35,7 +35,7 @@
         android:textSize="@dimen/size_text_normal"
         app:buttonTint="?attr/color_text_dark"/>
 
-    <android.support.v7.widget.AppCompatCheckBox
+    <androidx.appcompat.widget.AppCompatCheckBox
         android:id="@+id/allow_fast_scale"
         android:layout_below="@id/show_next_prev"
         android:layout_width="wrap_content"

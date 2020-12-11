@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/text_field_layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -59,7 +59,7 @@
                     android:maxLength="25"
                     android:textColor="@color/edit_text_selector" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <FrameLayout
                 android:layout_width="wrap_content"
@@ -94,7 +94,7 @@
                     android:clickable="true"
                     android:onClick="on_Item_Click"
                     android:padding="@dimen/value_large"
-                    android:tint="?attr/color_behavior_text"
+                    app:tint="?attr/color_behavior_text"
                     app:srcCompat="@drawable/ic_search" />
             </FrameLayout>
 

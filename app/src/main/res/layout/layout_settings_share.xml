@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <android.support.v7.widget.AppCompatCheckBox
+    <androidx.appcompat.widget.AppCompatCheckBox
         android:id="@+id/share_f"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,7 +15,7 @@
         android:textSize="@dimen/size_text_normal"
         app:buttonTint="?attr/color_text_dark"/>
 
-    <android.support.v7.widget.AppCompatCheckBox
+    <androidx.appcompat.widget.AppCompatCheckBox
         android:id="@+id/share_t"
         android:layout_below="@id/share_f"
         android:layout_width="wrap_content"
@@ -25,7 +25,7 @@
         android:textSize="@dimen/size_text_normal"
         app:buttonTint="?attr/color_text_dark"/>
 
-    <android.support.v7.widget.AppCompatCheckBox
+    <androidx.appcompat.widget.AppCompatCheckBox
         android:id="@+id/share_link"
         android:layout_below="@id/share_t"
         android:layout_width="wrap_content"
