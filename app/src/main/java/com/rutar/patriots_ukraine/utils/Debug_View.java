@@ -18,7 +18,7 @@ import static com.rutar.patriots_ukraine.Patriots_Ukraine.*;
 public class Debug_View extends View {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-// by GV_FiQst
+// Idea by GV_FiQst
 
 private int  mFPS = 0;          // the value to show
 private int  mFPSCounter = 0;   // the value to count
