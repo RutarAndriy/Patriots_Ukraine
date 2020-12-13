@@ -11,14 +11,15 @@ import android.webkit.*;
 import android.content.*;
 import android.content.pm.*;
 import android.view.animation.*;
-import android.support.v7.app.*;
-import android.support.annotation.*;
 
 import static com.rutar.patriots_ukraine.Helper.*;
 import static com.rutar.patriots_ukraine.Html_Processor.*;
 import static com.rutar.patriots_ukraine.Patriots_Ukraine.*;
 
 import android.annotation.SuppressLint;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 

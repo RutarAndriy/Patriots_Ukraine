@@ -12,11 +12,11 @@ import android.content.pm.*;
 import android.content.res.*;
 import android.view.animation.*;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.nispok.snackbar.*;
 import com.mikepenz.materialdrawer.*;
-
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 
 import javax.net.ssl.*;
 import java.security.cert.*;

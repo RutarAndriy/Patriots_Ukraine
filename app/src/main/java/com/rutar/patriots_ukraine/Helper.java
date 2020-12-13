@@ -13,7 +13,8 @@ import com.nispok.snackbar.listeners.*;
 import com.wdullaer.materialdatetimepicker.date.*;
 
 import android.app.Dialog;
-import android.support.v7.app.AlertDialog;
+
+import androidx.appcompat.app.AlertDialog;
 
 import static com.rutar.patriots_ukraine.Utilities.*;
 import static com.rutar.patriots_ukraine.Patriots_Ukraine.*;
