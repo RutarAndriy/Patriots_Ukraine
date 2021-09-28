@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?attr/list_item_color_1">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/title_bar_background">
+
+        <TextView
+            android:text="@string/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/text_color_1"
+            android:textSize="@dimen/text_size_title"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="@dimen/title_padding"
+            android:layout_gravity="center"
+            tools:ignore="InvalidId"
+            android:id="@+id/menu_title"
+            android:onClick="on_View_Click"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <ImageView
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_gravity="left|center_vertical"
+            android:contentDescription=""
+            tools:ignore="ContentDescription,InvalidId,RtlHardcoded"
+            android:id="@+id/menu_open"
+            android:onClick="on_View_Click"
+            app:srcCompat="@drawable/ic_menu"
+            android:tint="?attr/text_color_1"
+            android:padding="@dimen/icon_padding" />
+
+        <ImageView
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_gravity="right|center_vertical"
+            android:contentDescription=""
+            tools:ignore="ContentDescription,InvalidId,RtlHardcoded"
+            android:id="@+id/refresh"
+            android:onClick="on_View_Click"
+            app:srcCompat="@drawable/ic_refresh"
+            android:tint="?attr/text_color_1"
+            android:padding="@dimen/icon_padding" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="@string/error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/error"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/error_text_margin"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_title"
+            android:visibility="gone"
+            android:textColor="?attr/text_color_2" />
+
+        <ListView android:id="@+id/news_list"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+        </ListView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/logo">
+
+            <ImageView
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/logo_image"
+                android:onClick="on_View_Click"
+                app:srcCompat="?attr/logo"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_width="@dimen/logo_width"
+                android:layout_height="@dimen/logo_height"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:text="@string/site"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_logo"
+                android:gravity="center_horizontal"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="@dimen/logo_text_margin"
+                android:textColor="?attr/text_color_2" />
+        </FrameLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

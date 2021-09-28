@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?attr/list_item_color_1">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/title_bar_background">
+
+        <TextView
+            android:text="@string/menu_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/text_color_1"
+            android:textSize="@dimen/text_size_title"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="@dimen/title_padding"
+            android:layout_gravity="center"
+            tools:ignore="InvalidId"
+            android:clickable="false"/>
+
+        <ImageView
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_gravity="left|center_vertical"
+            android:contentDescription=""
+            tools:ignore="ContentDescription,InvalidId"
+            android:id="@+id/menu_open"
+            android:onClick="on_View_Click"
+            app:srcCompat="@drawable/ic_menu"
+            android:tint="?attr/text_color_1"
+            android:padding="@dimen/icon_padding" />
+
+        <ImageView
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_gravity="right|center_vertical"
+            android:contentDescription=""
+            tools:ignore="ContentDescription,InvalidId"
+            android:id="@+id/info"
+            android:onClick="on_View_Click"
+            app:srcCompat="@drawable/ic_menu_about"
+            android:tint="?attr/text_color_1"
+            android:padding="@dimen/icon_padding" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="@string/favorite_list_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/empty"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/error_text_margin"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_title"
+            android:visibility="gone"
+            android:textColor="?attr/text_color_2" />
+
+        <ListView android:id="@+id/favorite_list"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+        </ListView>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="@dimen/land_im_prev_w"
+        android:layout_height="@dimen/land_im_prev_h"
+        app:srcCompat="@mipmap/no_image"
+        android:id="@+id/preview"
+        android:layout_marginLeft="@dimen/news_list_margin"
+        android:layout_marginTop="@dimen/news_list_margin"
+        android:layout_marginBottom="@dimen/news_list_margin" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/news_list_margin"
+        android:layout_marginTop="@dimen/news_list_margin"
+        android:layout_marginRight="@dimen/news_list_margin">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@android:string/untitled"
+            android:background="?attr/time_bar_background"
+            android:textSize="@dimen/text_size_list_item_time">
+        </TextView>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@android:string/unknownName"
+            android:textSize="@dimen/text_size_list_item"
+            android:layout_marginBottom="@dimen/news_list_text_margin">
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

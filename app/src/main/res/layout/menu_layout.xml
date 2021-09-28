@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/icon_size">
+
+        <TextView
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:id="@+id/menu_close"
+            android:clickable="true"
+            android:onClick="on_View_Click" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/list_item_color_1"
+        android:verticalScrollbarPosition="left">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal">
+
+                <ImageView
+                    android:layout_height="wrap_content"
+                    app:srcCompat="?attr/menu_logo"
+                    android:id="@+id/menu_logo"
+                    android:layout_width="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:clickable="true"
+                    android:onClick="on_View_Click"
+                    android:layout_marginLeft="@dimen/menu_logo_horizontal_margin"
+                    android:layout_marginRight="@dimen/menu_logo_horizontal_margin"
+                    android:layout_marginBottom="@dimen/menu_logo_bottom_margin"
+                    android:layout_marginTop="@dimen/menu_logo_top_margin" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/menu_news"
+                    android:clickable="true"
+                    android:onClick="on_Menu_Item_Click"
+                    android:paddingTop="@dimen/menu_vertical_padding"
+                    android:paddingBottom="@dimen/menu_vertical_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/menu_icon_size"
+                        android:layout_height="@dimen/menu_icon_size"
+                        app:srcCompat="@drawable/ic_menu_news"
+                        android:layout_weight="0"
+                        android:layout_marginLeft="@dimen/menu_icon_margin"
+                        android:tint="?attr/text_color_2" />
+
+                    <TextView
+                        android:text="@string/menu_news"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/menu_text_size"
+                        android:layout_marginLeft="@dimen/menu_text_margin"
+                        android:textColor="?attr/text_color_2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/menu_favorite"
+                    android:clickable="true"
+                    android:onClick="on_Menu_Item_Click"
+                    android:paddingTop="@dimen/menu_vertical_padding"
+                    android:paddingBottom="@dimen/menu_vertical_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/menu_icon_size"
+                        android:layout_height="@dimen/menu_icon_size"
+                        app:srcCompat="@drawable/ic_menu_favorite"
+                        android:layout_weight="0"
+                        android:layout_marginLeft="@dimen/menu_icon_margin"
+                        android:tint="?attr/text_color_2" />
+
+                    <TextView
+                        android:text="@string/menu_favorite"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/menu_text_size"
+                        android:layout_marginLeft="@dimen/menu_text_margin"
+                        android:textColor="?attr/text_color_2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/menu_settings"
+                    android:clickable="true"
+                    android:onClick="on_Menu_Item_Click"
+                    android:paddingTop="@dimen/menu_vertical_padding"
+                    android:paddingBottom="@dimen/menu_vertical_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/menu_icon_size"
+                        android:layout_height="@dimen/menu_icon_size"
+                        app:srcCompat="@drawable/ic_menu_settings"
+                        android:layout_weight="0"
+                        android:layout_marginLeft="@dimen/menu_icon_margin"
+                        android:tint="?attr/text_color_2" />
+
+                    <TextView
+                        android:text="@string/menu_settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/menu_text_size"
+                        android:layout_marginLeft="@dimen/menu_text_margin"
+                        android:textColor="?attr/text_color_2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/menu_about"
+                    android:clickable="true"
+                    android:onClick="on_Menu_Item_Click"
+                    android:paddingTop="@dimen/menu_vertical_padding"
+                    android:paddingBottom="@dimen/menu_vertical_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/menu_icon_size"
+                        android:layout_height="@dimen/menu_icon_size"
+                        app:srcCompat="@drawable/ic_menu_about"
+                        android:layout_weight="0"
+                        android:layout_marginLeft="@dimen/menu_icon_margin"
+                        android:tint="?attr/text_color_2" />
+
+                    <TextView
+                        android:text="@string/menu_about"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/menu_text_size"
+                        android:layout_marginLeft="@dimen/menu_text_margin"
+                        android:textColor="?attr/text_color_2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/menu_exit"
+                    android:clickable="true"
+                    android:onClick="on_Menu_Item_Click"
+                    android:paddingTop="@dimen/menu_vertical_padding"
+                    android:paddingBottom="@dimen/menu_vertical_padding">
+
+                    <ImageView
+                        android:layout_width="@dimen/menu_icon_size"
+                        android:layout_height="@dimen/menu_icon_size"
+                        app:srcCompat="@drawable/ic_menu_exit"
+                        android:layout_weight="0"
+                        android:layout_marginLeft="@dimen/menu_icon_margin"
+                        android:tint="?attr/text_color_2" />
+
+                    <TextView
+                        android:text="@string/menu_exit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/menu_text_size"
+                        android:layout_marginLeft="@dimen/menu_text_margin"
+                        android:textColor="?attr/text_color_2" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

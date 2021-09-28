@@ -1,0 +1,118 @@
+<resources>
+
+    <string name="version">версія %1$s</string>
+    <string name="app_name">Patriots Ukraine</string>
+    <string name="empty_title">Ілюстрація: patrioty.org.ua</string>
+    <string name="progress_title_1">Отримання останніх новин</string>
+    <string name="progress_title_2">Завантаження даних</string>
+    <string name="date_picker_title">Виберіть необхідну дату</string>
+
+    <string name="menu_news">Новини</string>
+    <string name="menu_favorite">Улюблені</string>
+    <string name="menu_settings">Налаштування</string>
+    <string name="menu_about">Про програму</string>
+    <string name="menu_exit">Вихід</string>
+
+    <string name="rate_text_1">Якщо вам сподобалася програма</string>
+    <string name="rate_text_2">будь ласка, знайдіть хвилинку щоб оцінити її.</string>
+    <string name="rate_error">Play Market не знайдено</string>
+    <string name="rate_later">Пізніше</string>
+    <string name="rate_yes">Оцінити</string>
+    <string name="rate_no">Ніколи</string>
+
+    <string name="site">www.patrioty.org.ua</string>
+    <string name="link">Переглянути на patrioty.org.ua</string>
+    <string name="exit_text">Для виходу натисніть двічі</string>
+
+    <string name="dialog_ok">Зберегти</string>
+    <string name="dialog_back">Назад</string>
+    <string name="dialog_clean">Очистити дані</string>
+    <string name="dialog_repair">Відновити</string>
+
+    <string name="repair_dialog_title">Відновлення налаштувань</string>
+    <string name="repair_dialog_text">Відновити стандартні налаштування?</string>
+
+    <string name="info_dialog_title">Улюблені сторінки</string>
+    <string name="info_dialog_text">Улюблених сторінок: %1$d\nЗайнято пам\'яті: %2$.4f Мб</string>
+
+    <string name="snackbar_command">Застосувати зміни</string>
+
+    <string name="error">Не вдалося отримати дані з сервера. Можливо немає з\'єднання із мережею. Перевірте з\'єднання та спробуйте ще раз.</string>
+
+    <string name="day_01">Понеділок</string>
+    <string name="day_02">Вівторок</string>
+    <string name="day_03">Середа</string>
+    <string name="day_04">Четвер</string>
+    <string name="day_05">П\'ятниця</string>
+    <string name="day_06">Субота</string>
+    <string name="day_07">Неділя</string>
+
+    <string name="month_01">січня</string>
+    <string name="month_02">лютого</string>
+    <string name="month_03">березня</string>
+    <string name="month_04">квітня</string>
+    <string name="month_05">травня</string>
+    <string name="month_06">червня</string>
+    <string name="month_07">липня</string>
+    <string name="month_08">серпня</string>
+    <string name="month_09">вересня</string>
+    <string name="month_10">жовтня</string>
+    <string name="month_11">листопада</string>
+    <string name="month_12">грудня</string>
+
+    <string name="year">року</string>
+
+    <string name="page_error">Не вдалося відкрити дану сторінку. Можливо немає з\'єднання із мережею. Перевірте з\'єднання та спробуйте ще раз.</string>
+    <string name="favorite_list_empty">Список улюблених сторінок порожній. Щоб додати сторінку до улюблених написніть на піктограму зірки на ній.</string>
+
+    <string name="about_01">Патріоти України - єднаймося!</string>
+    <string name="about_02">Місія:</string>
+    <string name="about_03"> • Об\'єднання патріотів з метою посилення взаємодії на благо Батьківщини.</string>
+    <string name="about_04"> • Гуртування активістів навколо суспільно значимих заходів, сприяння розбудові громадянського суспільства в Україні.</string>
+    <string name="about_05"> • Залучення якомога ширшої аудиторії до громадської діяльності.</string>
+    <string name="about_06">Завдання проекту:</string>
+    <string name="about_07"> • Висвітлення подій в Україні та світі в патріотичному світлі. Інформаційно-новинарна складова сайту - засіб для залучення патріотів до громадськозначимих питань та проектів.</string>
+    <string name="about_08"> • Сприяння волонтерським об’єднанням та громадським установам у проведенні патріотичних заходів. Надання таким комунікаційного майданчика.</string>
+
+    <string name="seekbar_title_1">Розмір шрифту статей</string>
+    <string name="seekbar_title_2">Якість зображень</string>
+
+    <string name="settings_theme_title">Тема: %1$s</string>
+    <string name="settings_theme_hint">Виберіть світлу або темну тему оформлення</string>
+    <string name="settings_theme_choice_1">світла</string>
+    <string name="settings_theme_choice_2">темна</string>
+
+    <string name="settings_language_title">Мова: %1$s</string>
+    <string name="settings_language_hint">Виберіть мову програми</string>
+    <string name="settings_language_choice_1">українська</string>
+    <string name="settings_language_choice_2">російська</string>
+
+    <string name="settings_orientation_title">Орієнтація екрану: %1$s</string>
+    <string name="settings_orientation_hint">Виберіть портретну, ландшафтну або автоматичну орієнтацію екрану</string>
+    <string name="settings_orientation_choice_1">портретна</string>
+    <string name="settings_orientation_choice_2">альбомна</string>
+    <string name="settings_orientation_choice_3">автоматична</string>
+
+    <string name="settings_font_size_title">Розмір шрифту статей: %1$s%%</string>
+    <string name="settings_font_size_hint">Виберіть розмір тексту на сторінках новин</string>
+
+    <string name="settings_preview_title">Показувати прев\'ю: %1$s</string>
+    <string name="settings_preview_hint">Виберіть режим відображення прев\'ю у списку новин</string>
+    <string name="settings_preview_choice_1">так</string>
+    <string name="settings_preview_choice_2">ні</string>
+
+    <string name="settings_quality_title">Якість зображень: %1$s%%</string>
+    <string formatted="false"
+            name="settings_quality_hint">Виберіть якість зображень від 0% до 100%. Зображення з більшою якістю займають більше пам\'яті при кешуванні</string>
+
+    <string name="settings_link_title">Показувати посилання на сторінку: %1$s</string>
+    <string name="settings_link_hint">Виберіть чи показувати посилання на оригінальну сторінку внизу екрану</string>
+    <string name="settings_link_choice_1">так</string>
+    <string name="settings_link_choice_2">ні</string>
+
+    <string name="settings_sociality_title">Показувати кнопки соціальних мереж: %1$s</string>
+    <string name="settings_sociality_hint">Виберіть чи показувати кнопки соціальних мереж внизу екрану</string>
+    <string name="settings_sociality_choice_1">так</string>
+    <string name="settings_sociality_choice_2">ні</string>
+
+</resources>
